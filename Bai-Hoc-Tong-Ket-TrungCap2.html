@@ -201,7 +201,8 @@ img, svg { max-width: 100%; }
 .reveal { border: 1px solid #bfdbfe; border-left: none; }
 .reading-box { background: #eff6ff; border-left: none; }
 /* --- Chỗ trống điền từ hiển thị dạng "......" không gạch chân, bấm vào mới hiện danh sách từ (theo ý anh 06/11) --- */
-.cloze-select { border: none; border-radius: 0; background: transparent; padding: 3px 2px; min-width: 90px; text-align: center; }
+.cloze-select { border: none; border-radius: 0; background: transparent; padding: 3px 2px; min-width: 90px; text-align: center; appearance: none; -webkit-appearance: none; }
+.cloze-select::-ms-expand { display: none; }
 .read-para-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
 .read-para-text { font-size: 19px; line-height: 2.15; text-align: justify; text-indent: 2em; margin: 0; color: #1e293b; }
 .read-para-trans { margin: 10px 0; font-size: 14px; color: #475569; line-height: 1.65; }
@@ -213,6 +214,23 @@ img, svg { max-width: 100%; }
 
 .tts-voice-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:6px 0}
 .tts-voice-row select{flex:1;min-width:120px;max-width:100%;padding:4px 6px;border:1px solid #d1d5db;border-radius:6px;font-size:14px}
+
+.dlg-line{padding:8px 10px;border:1px solid #e5e7eb;border-radius:8px;margin-bottom:8px;background:#fff}
+.dlg-sp{display:inline-block;padding:2px 9px;border-radius:12px;color:#fff;font-weight:700;font-size:13px;margin-right:8px;vertical-align:middle}
+.dlg-zh{font-size:17px;line-height:1.9}
+.dlg-zh ruby rt{font-size:.52em;color:#2563eb}
+.dlg-zh.hide-ruby rt{display:none}
+.dlg-vi{color:#64748b;font-size:14px;margin:2px 0 0 30px}
+.dlg-voice-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:6px 0}
+.dlg-voice-row select{flex:1;min-width:120px;max-width:100%;padding:4px 6px;border:1px solid #d1d5db;border-radius:6px;font-size:14px}
+/* --- Nút điều khiển Bài 8 gọn: chỉ icon, không chữ; tốc độ cùng hàng (theo ý anh 06/11) --- */
+.dlg-controls-row input[type=range]{flex:1;min-width:60px;vertical-align:middle}
+.dlg-controls-row input[type=number]{width:64px;padding:4px 6px;border:1px solid #d1d5db;border-radius:6px;font-size:14px}
+.dlg-play-btn{font-size:16px;padding:5px 12px;min-width:44px}
+.dlg-icon-btn.dlg-btn-on{background:#dbeafe;border-color:#93c5fd}
+.dlg-pinyin-btn{font-weight:700;border-radius:6px;padding:4px 10px;cursor:pointer}
+.dlg-pinyin-btn.on{background:#2563eb;color:#fff;border:1px solid #2563eb}
+.dlg-pinyin-btn.off{background:#e5e7eb;color:#6b7280;border:1px solid #d1d5db}
 </style>
 </head>
 <body>
@@ -1020,7 +1038,7 @@ img, svg { max-width: 100%; }
 <div class="sub" style="margin-bottom:8px;">Đọc kỹ đoạn văn rồi trả lời 5 câu hỏi bên dưới. Bấm 🔊 để nghe từng đoạn.</div>
 <div class="reading-box">
 <div class="tts-voice-row"><span class="hint"><b>Giọng đọc:</b></span> <select class="tts-voice-select" id="tts-voice-read" aria-label="Chọn giọng đọc tiếng Trung"></select> <button class="tts-btn" type="button" onclick="previewCommonVoice()">🔊 Nghe thử</button></div><div class="hint" id="tts-voice-note-read">Đang kiểm tra giọng đọc trên thiết bị…</div>
-<div class="reading-zh hide-ruby">
+<div class="reading-zh hide-ruby" id="chunk-zh-read">
 <section class="read-para">
 <div class="read-para-head"><button class="tts-btn" onclick="playChunked('read', 0.88, 0, 0)">🔊 Nghe đoạn này</button></div>
 <p class="read-para-text"><ruby>这<rt>Zhè</rt></ruby><ruby>个<rt>gè</rt></ruby><ruby>周<rt>zhōu</rt></ruby><ruby>末<rt>mò</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>看<rt>kàn</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>朋<rt>péng</rt></ruby><ruby>友<rt>you</rt></ruby>。 <ruby>他<rt>Tā</rt></ruby><ruby>最<rt>zuì</rt></ruby><ruby>近<rt>jìn</rt></ruby><ruby>学<rt>xué</rt></ruby><ruby>习<rt>xí</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>忙<rt>máng</rt></ruby>，<ruby>也<rt>yě</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>累<rt>lèi</rt></ruby>。 <ruby>他<rt>Tā</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>学<rt>xué</rt></ruby><ruby>习<rt>xí</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>长<rt>cháng</rt></ruby><ruby>时<rt>shí</rt></ruby><ruby>间<rt>jiān</rt></ruby>，<ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>压<rt>yā</rt></ruby><ruby>力<rt>lì</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>大<rt>dà</rt></ruby>。 <ruby>我<rt>Wǒ</rt></ruby><ruby>们<rt>men</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>起<rt>qǐ</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>商<rt>shāng</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>买<rt>mǎi</rt></ruby><ruby>东<rt>dōng</rt></ruby><ruby>西<rt>xi</rt></ruby>。 <ruby>这<rt>Zhè</rt></ruby><ruby>个<rt>gè</rt></ruby><ruby>商<rt>shāng</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>菜<rt>cài</rt></ruby><ruby>都<rt>dōu</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>新<rt>xīn</rt></ruby><ruby>鲜<rt>xiān</rt></ruby>。 <ruby>我<rt>Wǒ</rt></ruby><ruby>们<rt>men</rt></ruby><ruby>买<rt>mǎi</rt></ruby><ruby>了<rt>le</rt></ruby><ruby>西<rt>xī</rt></ruby><ruby>红<rt>hóng</rt></ruby><ruby>柿<rt>shì</rt></ruby><ruby>和<rt>hé</rt></ruby><ruby>水<rt>shuǐ</rt></ruby><ruby>果<rt>guǒ</rt></ruby>。</p>
@@ -1039,13 +1057,14 @@ img, svg { max-width: 100%; }
 </section>
 </div>
 <script>window.CHUNK_DATA = window.CHUNK_DATA || {}; window.CHUNK_DATA['read'] = ["这个周末我去看我的朋友。他最近学习很忙，也很累。他每天学习很长时间，觉得压力很大。我们一起去商店买东西。这个商店的菜都很新鲜。我们买了西红柿和水果。", "我们用手机付钱，不用现金。回家以后，我们一起做饭。他做的菜很好吃，我很喜欢。他做的菜很有香味，我们都觉得很好吃。吃完饭，我们一起看电视。这个电影很有意思，我们很喜欢。", "我们一边看电视，一边聊天儿。我们一边聊天儿，一边吃水果，很开心。时间过得很快，已经很晚了。我要回家了，他送我出门。回家以后，我觉得今天很有意思。我给他发微信，说今天过得很好。", "今天过得很开心，很有意思。明天我们一起去公园走路，很有意思。下个周末我们还要一起做饭。我们还要一起去商店买菜和水果。他说他要早睡觉，不想太累。这个周末很好，我觉得很高兴。"];</script>
-<div class="reading-Controls">
-<button class="tts-btn" onclick="playChunked('read', 0.88)">▶️ Nghe đoạn văn</button>
-<button class="tts-btn" id="chunk-pause-read" onclick="toggleChunkPause('read')">⏸️ Tạm dừng</button>
-<button class="tts-btn" onclick="restartChunked('read')">↺ Nghe lại từ đầu</button>
-<button class="tts-btn" onclick="playChunked('read', 0.6)">🐢 Nghe chậm</button>
-<button class="btn-sm" onclick="document.getElementById('read-help').classList.toggle('show')">👁️ Ẩn/Hiện Dịch nghĩa</button>
-<button class="btn-sm" onclick="document.querySelector('.reading-zh').classList.toggle('hide-ruby')">🔤 Ẩn/Hiện Pinyin trên chữ</button>
+<div class="reading-Controls dlg-controls-row">
+<span class="hint">Tốc độ:</span>
+<input type="range" id="chunk-speed-range-read" min="0.5" max="1.5" step="0.01" value="0.88" oninput="setChunkRateNum('read', this.value)">
+<input type="number" id="chunk-speed-num-read" min="0.5" max="1.5" step="0.05" value="0.88" onchange="setChunkRateNum('read', this.value)">
+<button class="tts-btn dlg-play-btn" id="chunk-play-read" onclick="toggleChunkPlay('read')" title="Nghe / Tạm dừng">▶️</button>
+<button class="tts-btn" onclick="restartChunked('read')" title="Nghe lại từ đầu">↺</button>
+<button class="btn-sm dlg-icon-btn" id="chunk-trans-btn-read" onclick="toggleChunkHelp('read-help', 'chunk-trans-btn-read')" title="Hiện/Ẩn Dịch nghĩa">👁️</button>
+<button class="btn-sm dlg-pinyin-btn off" id="chunk-pinyin-btn-read" onclick="toggleChunkRuby('chunk-zh-read', 'chunk-pinyin-btn-read')" title="Hiện/Ẩn Pinyin">Pinyin</button>
 </div>
 <div class="reading-help" id="read-help">
 <div class="read-para-trans"><p>Cuối tuần này tôi đi thăm bạn tôi. Gần đây anh ấy học rất bận, cũng rất mệt. Anh ấy ngày nào cũng học rất lâu, thấy áp lực rất lớn. Chúng tôi cùng nhau đi cửa hàng mua đồ. Rau ở cửa hàng này đều rất tươi. Chúng tôi mua cà chua và trái cây.</p></div>
@@ -1158,20 +1177,19 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📖 Đoạn văn tổng kết — Câu chuyện <span class="badge">120 câu · dùng đủ toàn bộ từ vựng Trung cấp 2</span></h2>
-<div class="sub" style="margin-bottom:8px;">Dịch nghĩa tiếng Việt nằm ngay dưới mỗi câu, mặc định đang ẩn — bấm nút "Ẩn/Hiện Dịch nghĩa" để hiện ra khi cần.</div>
+<div class="sub" style="margin-bottom:8px;">Dịch nghĩa tiếng Việt nằm ngay dưới mỗi câu, mặc định đang ẩn — bấm 👁️ để hiện ra khi cần.</div>
 <div class="reading-box">
 <div class="tts-voice-row"><span class="hint"><b>Giọng đọc:</b></span> <select class="tts-voice-select" id="tts-voice-story" aria-label="Chọn giọng đọc tiếng Trung"></select> <button class="tts-btn" type="button" onclick="previewCommonVoice()">🔊 Nghe thử</button></div><div class="hint" id="tts-voice-note-story">Đang kiểm tra giọng đọc trên thiết bị…</div>
-<div class="reading-Controls">
-<button class="btn-sm" onclick="document.getElementById('story-zh').classList.toggle('hide-ruby')">🔤 Ẩn/Hiện Pinyin trên chữ</button>
-<button class="btn-sm" onclick="document.getElementById('story-zh').classList.toggle('hide-trans')">👁️ Ẩn/Hiện Dịch nghĩa</button>
+<div class="reading-Controls dlg-controls-row">
+<span class="hint">Tốc độ:</span>
+<input type="range" id="chunk-speed-range-story" min="0.5" max="1.5" step="0.01" value="0.88" oninput="setChunkRateNum('story', this.value)">
+<input type="number" id="chunk-speed-num-story" min="0.5" max="1.5" step="0.05" value="0.88" onchange="setChunkRateNum('story', this.value)">
+<button class="tts-btn dlg-play-btn" id="chunk-play-story" onclick="toggleChunkPlay('story')" title="Nghe / Tạm dừng">▶️</button>
+<button class="tts-btn" onclick="restartChunked('story')" title="Nghe lại từ đầu">↺</button>
+<button class="btn-sm dlg-icon-btn" id="chunk-trans-btn-story" onclick="toggleChunkTrans('story-zh', 'chunk-trans-btn-story')" title="Hiện/Ẩn Dịch nghĩa">👁️</button>
+<button class="btn-sm dlg-pinyin-btn off" id="chunk-pinyin-btn-story" onclick="toggleChunkRuby('story-zh', 'chunk-pinyin-btn-story')" title="Hiện/Ẩn Pinyin">Pinyin</button>
 </div>
 <script>window.CHUNK_DATA = window.CHUNK_DATA || {}; window.CHUNK_DATA['story'] = ["小明在学校学习，他先说学校里的无烟日，五月三十一号是无烟日。五月三十一号，我们举行无烟日活动，根据杂志，抽烟的人占总数的百分之二十。学校里禁烟，抽烟会有处罚，也会有罚款，他觉得不抽烟也很酷，因此我不抽烟。二手烟对孩子不好，也会影响健康，香烟的包装上写了别抽烟，抽烟对健康有危害。这个活动起作用了，禁烟能减轻空气的危害，我对健康很感兴趣，也很同情抽烟的人。工作压力大，他想抽烟，不过这里禁烟，他说压力大，这不是抽烟的借口。六月一号是儿童节，五月三十一号是无烟日，社会上的人都爱健康，抽烟的人数量很多。这个城市的人口很多，老师很严肃，这里不能抽烟，健康和香烟，你选择哪一个？他把钱存在银行，也把香烟放在家里，家里有一个烟灰缸，他以前抽烟，现在不抽烟了。他差不多每天买一包香烟，抽烟不好，因此我不抽烟。不用鞭子，大家也会不抽烟，禁烟以后，学校更卫生了。他想抽烟，而我不想，我觉得禁烟对大家都很好，这个场所不能抽烟，在学校里也不能抽烟。我不想吸二手烟，请别抽烟。", "小明说家里的事，说一说做饭和结婚纪念日。今天是我们的结婚纪念日，我们一起庆祝，他第一次来我家，有点儿放不开。他打量了我一下，就放松了，他几乎每天都来我家待一会儿，我们常常聊天儿。大家叫他老师，他对人很有礼貌，我接待了他，他很高兴。这个老外很喜欢中国菜，也很喜欢中国，他对中国的印象很好，也习惯了这里的生活。来中国以后，他改变了很多，感受到了中国的美好，妈妈煎了两个荷包蛋，西红柿很新鲜。他用筷子吃饭，觉得这个菜很嫩，蜂蜜和柠檬，很好喝，她用烤箱做蛋糕，大家都很喜欢。我订了一个大蛋糕，庆祝我们的结婚纪念日，他的课题是中国的建筑。他是工程师，工作很忙，我们在一起很快乐，也很放松，他会弹钢琴，也会在网上买吉他。他说得很温和，也很幽默，大家都喜欢他，他很亲切，这个地方很有情调。妈妈在熨烫爸爸的衣服，很周到，他第一次唱歌，坐立不安，不过大家都说他唱得很好。这是一个真实的事，也是一个美好的晚上，晚上，我看见了自己的影子，今天的热点是结婚。他第一次做饭，常常犯错，大家各自做一个菜，都很快乐。这里对他来说很陌生，不过他很喜欢这里。", "晚上，小明去广场看大家跳舞，也说一说广场舞，跳舞是我的爱好，我每天都去广场跳舞。晚上在广场跳广场舞，有人说会扰民，其实我也很喜欢跳舞，广场舞吸引了很多老人。老师安排了今天的活动，大家都很幸福，她在广场编舞，跳得很细致。跳舞以后，她很自信，也不害羞了，我们去茶馆儿喝茶，也去酒吧聊天儿。他一个人住，有点儿孤单，喜欢去茶馆儿，我今天很糊涂，忘了时间，也忘了锻炼。他有慧眼，知道别人喜欢什么，你对广场舞有什么看法？这里的生活很丰富，也很国际化，我受不了香烟，也不喜欢臭豆腐。泡菜和咖哩都很好吃，香菜也很好吃，她每天都用香水，很喜欢香水。他在研究广场舞，也在研究音乐。", "小明喜欢用手机，他说一说手机和照片的事，这几年，变化很大，手机的技术也很好。我用手机记录生活，也用手机看微博，我们在微信聊天儿，也在微博看相册。我把全家福上传到网上，也从网上下载软件，他的相机很贵，颜色也很好看。她喜欢修图，也喜欢美颜，更喜欢自拍，这张照片是照骗，现实和照片不一样。她去照相馆拍艺术照，照片很美，过度修图会丧失真实，也会骗人。美化照片很普遍，大家都喜欢美化，这是一个普遍的现象，也是一个新时代的现象。大家心知肚明，他在开玩笑，他还在我脑海里，我很喜欢他。美好的时光过得很快，我很喜欢那个时代，适当锻炼对健康好，不要过度锻炼。我家距离学校不远，我们常常聚在一起，大家的看法一致，都说微信是很好的社交软件。这个菜的做法很容易，我也想学，看见好吃的，我流口水，也想吃一点儿。修图不能还原真实的颜色，大家都知道，这里很多元，有中国菜，也有茶馆儿。两面性很普遍，照片也有两面性，阿姨做的饭很好吃，我每天都去阿姨家。不要只看表面，表面和现实不一样，他不务正业，每天只看手机，不努力。我看见老师，就打招呼，老师也很亲切，我发现了一个好地方，那里有很多唱片。钱够了，我们去买东西，他的滑板很快，也很滑，他很喜欢滑板。他是建筑师，也是教授，工作很忙，妈妈是劳碌命，爸爸是慢性子，两个人很不一样。我们喜欢冒险，也喜欢努力，梦想是做教授，他很迷吉他，也很迷唱片。儿媳和女婿都很好，一家人很幸福，我把文件打印好，也把照片放在相册里。大家皆喜欢他，他也很喜欢大家。", "回到家里，小明说一说自己家里的日子，我出生在一个小城市，日子过得很正常。妈妈很勤劳，爸爸很谦虚，他们都很珍惜现在的生活。叔叔在学院工作，他教数学，学生都很喜欢他，我小时候很爱看小说，也常常在院里发呆。爸爸去开会了，妈妈在家做饭，实际上，我的大脑常常想很多东西，晚上不想睡觉。妈妈说我是睡神，白天也常常想睡觉，爸爸每天早上在院里打太极拳，他很喜欢跑步。我却闲不住，常常想出门找亲戚朋友一起凑热闹。姐姐嫌我不爱学习，可是我觉得这样很好，去年我去学院实习，老师给我很多建议。我要把握机会，努力实现它，人生不长，我们要珍惜时间，也要珍惜朋友。现在的快乐比过去多一倍，我很珍惜它，小孩子长得很快，发育也很快，爸爸妈妈都很吃惊。这几年城市发展很快，过去很小，现在很大，春天来了，院里也有了新芽，也开花了。妈妈提来一壶水，又拿来一个碗，放在桌子上。水盆里的水很重，我一个人提不了，爸爸帮我提。爸爸说，东西的重量不重要，重要的是我们一起努力。院里的枯木还在，我们不嫌它不好看，因为它很特别。妈妈常常说我哪壶不开提哪壶，叫我不要说太多。爸爸很享受这样的日子，他说自己闲得很，却很快乐。我在爸爸妈妈家里成长，学到了很多东西，这件衣服三百克，不重，算得上很好看。", "说到吃饭，小明说一说北方人和南方人的饮食。我是北方人，朋友是南方人，我们常常一起吃饭。北方人和南方人的饮食有差异，可是我们都爱吃面。我一看见比萨就想吃，它的香味很好闻，比萨上有芝士，芝士的脂肪很多，热量也很高。妈妈说馒头很有营养，叫我多吃一点，补充营养，面要发酵才能做馒头，时间越长，味道越好。妈妈做的菜独一无二，香味很特别，我一闻就饿了。我们两个人臭味相投，都爱吃辣，也爱吃甜，朋友打开话匣子，说个没完，我洗耳恭听。他既会做中国菜，又会做别的菜，我们都很喜欢，中国菜代表中国文化，我觉得它很有价值。肚子饿的时候，我就想吃东西，妈妈先问我想吃什么。总而言之，饮食很重要，我们要吃得健康，也要吃得快乐。你和我想的一样，我也有同感，吃饭要吃得开心，奇怪的是，我越吃越想吃，怎么也吃不够。做饭的时候，家里很热，妈妈频繁去看饭，妈妈做的面包很好吃，她分别做了两种。一种甜，一种不甜，我都喜欢，美拉德反应，面包很好吃，这也是文化。", "有一天，小明自己出门买东西，也学习自己付钱。今天出门，我随身带了钱包，可是没有带现金，现在基本没有人用现金，大家都用支付宝。只有绑定银行卡，才可以用支付宝转账，我设置了密码，可是我不知道。营业员也不知道怎么办，妈妈说，密码不能告诉别人，这样做有风险。就算你不知道密码，也可以刷脸，摄像头可以识别你。我去商店买东西，刷卡很快，可是我更喜欢刷脸。营业员问我，这几个商品是谁的，我说都是我的。我想交换一件衣服，可是账号不对，营业员说不能换。我理解营业员的意思，可是不明白为什么不能换。当时我不高兴，可是现在我想，营业员做得对。连小孩子都知道，买东西要先看一看，难道我不知道吗？无论如何，我要学会自己买东西，不能总是叫妈妈帮我。妈妈提出一个建议，叫我先点外卖，看看饭怎么样。我接受妈妈的建议，赶快点外卖，可是红薯没有了。如此说来，点外卖也很方便，我以后要多用，爸爸帮我代买东西，他说代买也是好事。", "现在，小明说一说自己在城市里的生活和运气，我住在市区的公寓里，每天早上都很忙。早上开车去工作，常常堵车，早高峰很糟糕，有一次我差点儿晚了，还好赶上了，真是幸运。下班以后，我常常去看芭蕾舞，也喜欢听二胡。爸爸喜欢下棋，也喜欢书法，他说下棋很有意思。妈妈希望我学习好，爸爸说，望子成龙，望女成凤，太难了，一般来说，成人以后要自己工作。不能总是叫爸爸妈妈帮我，一般而言，年轻人和我们想的不一样，这是正常的。上次我去餐厅吃饭，顺便买了一副眼镜，那还用说，餐厅的饭很好吃，我常常去。据我所知，这家餐厅很有名，可是相对贵一点，看来你很喜欢这里，可是我倒是觉得一般。他总是添油加醋，真是不可思议，这下子糟糕了，我的纸片掉了，上面有重要的电话。弟弟吓唬我，说纸片不见了，我很怕，我避开弟弟，一个人去找纸片，结果找到了。姨妈在电视台工作，专门采访别人，很忙，姨父是医生，去年他摔跤了，骨折了，很倒霉。姨父说，喝凉水都塞牙，这几天运气不好了，冬天喝凉水不好，饭会塞牙，要多想一想。塞翁失马，焉知非福，坏事也可能成好事，我的运气很好，时来运转，工作很顺利。我受伤以后，慢慢好转，现在好多了，我写简历的时候，总是走神儿，想别的东西。老师提问的时候，我要好好听，不能走神儿，好汉不怕，我们要努力，才能学好。电视台采访了我，问我对公益有什么看法。我说，公益很重要，我想参加，也想反驳说公益没用的人。妈妈做的肉末豆腐很好吃，我闻一闻就想吃。今天吃馅儿饼，妈妈说要先挡好，别掉在桌子上，加班以后，我很累，可是还要去买菜，真倒霉。癌症不好，我们要多跑步，多游泳，我去体验了一次芭蕾舞，觉得很有意思。"];</script>
-<div class="reading-Controls">
-<button class="tts-btn" onclick="playChunked('story', 0.88)">▶️ Nghe cả truyện</button>
-<button class="tts-btn" id="chunk-pause-story" onclick="toggleChunkPause('story')">⏸️ Tạm dừng</button>
-<button class="tts-btn" onclick="restartChunked('story')">↺ Nghe lại từ đầu</button>
-<button class="tts-btn" onclick="playChunked('story', 0.6)">🐢 Nghe chậm</button>
-</div>
 <div class="reading-zh hide-ruby hide-trans" id="story-zh">
 <h3 style="margin:14px 0 6px;">🚭 无烟日 <button class="tts-btn" onclick="playChunked('story', 0.88, 0, 0)">🔊 Nghe cảnh này</button></h3>
 <div class="reading-line"><ruby>小<rt>Xiǎo</rt></ruby><ruby>明<rt>Míng</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>学<rt>xué</rt></ruby><ruby>校<rt>xiào</rt></ruby><ruby>学<rt>xué</rt></ruby><ruby>习<rt>xí</rt></ruby>，<ruby>他<rt>tā</rt></ruby><ruby>先<rt>xiān</rt></ruby><ruby>说<rt>shuō</rt></ruby><ruby>学<rt>xué</rt></ruby><ruby>校<rt>xiào</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>无<rt>Wú</rt></ruby><ruby>烟<rt>yān</rt></ruby><ruby>日<rt>Rì</rt></ruby>，<ruby>五<rt>wǔ</rt></ruby><ruby>月<rt>yuè</rt></ruby><ruby>三<rt>sān</rt></ruby><ruby>十<rt>shí</rt></ruby><ruby>一<rt>yī</rt></ruby><ruby>号<rt>hào</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>无<rt>Wú</rt></ruby><ruby>烟<rt>yān</rt></ruby><ruby>日<rt>Rì</rt></ruby>。</div>
@@ -2874,6 +2892,9 @@ function chunkPauseBtn(id) { return document.getElementById('chunk-pause-' + id)
 function updateChunkPauseBtn(id) {
   var b = chunkPauseBtn(id);
   if (b) b.textContent = (chunkCur && chunkCur.id === id && chunkCur.paused) ? '▶️ Tiếp tục nghe' : '⏸️ Tạm dừng';
+  // Nút play/pause dạng icon (file tổng kết): ▶️ khi chưa đọc/tạm dừng, ⏸️ khi đang đọc.
+  var pb = document.getElementById('chunk-play-' + id);
+  if (pb) pb.textContent = (chunkCur && chunkCur.id === id && chunkCur.playing && !chunkCur.paused) ? '⏸️' : '▶️';
 }
 function stopChunked(id) {
   var stoppedId = null;
@@ -2894,7 +2915,7 @@ function playChunked(id, rate, start, end) {
   if (!chunks.length) return;
   stopChunked();
   if (typeof stopDlg === 'function') { try { stopDlg(); } catch (e) {} }
-  rate = rate || 0.88;
+  rate = (typeof chunkRate !== 'undefined' && chunkRate[id]) || rate || 0.88;
   start = (typeof start === 'number') ? start : 0;
   end = (typeof end === 'number') ? end : chunks.length - 1;
   chunkCur = { id: id, chunks: chunks, idx: start, end: end, rate: rate, playing: true, paused: false, gen: 0 };
@@ -2926,15 +2947,79 @@ function speakChunk(p, gen) {
 function toggleChunkPause(id) {
   if (!('speechSynthesis' in window)) return;
   if (!chunkCur || chunkCur.id !== id) return;
-  var ss = window.speechSynthesis;
-  if (ss.paused) { ss.resume(); chunkCur.paused = false; }
-  else if (ss.speaking) { ss.pause(); chunkCur.paused = true; }
-  else return;
-  updateChunkPauseBtn(id);
+  if (chunkCur.paused) {
+    // Đọc tiếp: đọc lại từ đầu chunk đang dừng (KHÔNG dùng pause()/
+    // resume(): trên Chrome/Android resume() sau pause() thường không đọc
+    // tiếp, chuỗi đọc chết hẳn).
+    chunkCur.paused = false;
+    updateChunkPauseBtn(id);
+    speakChunk(chunkCur, chunkCur.gen);
+  } else {
+    // Tạm dừng: hủy utterance đang đọc, giữ nguyên idx (đọc tiếp sẽ đọc
+    // lại chunk này). Tăng gen TRƯỚC khi cancel để callback onerror/onend
+    // của utterance bị hủy không động vào chuỗi nữa.
+    chunkCur.paused = true;
+    chunkCur.gen++;
+    window.speechSynthesis.cancel();
+    updateChunkPauseBtn(id);
+  }
 }
 function restartChunked(id) {
   var rate = (chunkCur && chunkCur.id === id) ? chunkCur.rate : 0.88;
   playChunked(id, rate);
+}
+
+// Tốc độ riêng từng player chunked (file tổng kết): thanh trượt tốc độ
+// ghi vào đây, playChunked dùng nó thay cho tốc độ mặc định 0.88.
+var chunkRate = {};
+function setChunkRateNum(id, v) {
+  var val = parseFloat(v);
+  if (isNaN(val)) val = 0.88;
+  val = Math.min(1.5, Math.max(0.5, val));
+  chunkRate[id] = val;
+  var r = document.getElementById('chunk-speed-range-' + id);
+  var n = document.getElementById('chunk-speed-num-' + id);
+  if (r) r.value = val;
+  if (n) n.value = val;
+}
+// Nút play/pause 1 nút duy nhất (file tổng kết, theo format Bài 8 mới):
+// chưa đọc thì đọc từ đầu, đang đọc/tạm dừng thì đổi trạng thái.
+function toggleChunkPlay(id) {
+  if (!('speechSynthesis' in window)) return;
+  if (chunkCur && chunkCur.id === id) { toggleChunkPause(id); return; }
+  playChunked(id, chunkRate[id] || 0.88);
+}
+// Nút Pinyin (file tổng kết): ẩn/hiện pinyin trên chữ trong hộp của
+// chính player đó + trạng thái nút (bật = nền xanh dương).
+function toggleChunkRuby(zhId, btnId) {
+  var zh = document.getElementById(zhId);
+  if (!zh) return;
+  zh.classList.toggle('hide-ruby');
+  var btn = document.getElementById(btnId);
+  if (btn) {
+    var on = !zh.classList.contains('hide-ruby');
+    btn.classList.toggle('on', on);
+    btn.classList.toggle('off', !on);
+  }
+}
+// Nút 👁️ dịch nghĩa kiểu truyện (file tổng kết): dịch nghĩa nằm trong hộp
+// chữ, ẩn bằng hide-trans.
+function toggleChunkTrans(zhId, btnId) {
+  var zh = document.getElementById(zhId);
+  if (!zh) return;
+  var show = zh.classList.contains('hide-trans');
+  zh.classList.toggle('hide-trans', !show);
+  var btn = document.getElementById(btnId);
+  if (btn) btn.classList.toggle('dlg-btn-on', show);
+}
+// Nút 👁️ dịch nghĩa kiểu Bài 7 (file tổng kết): dịch nghĩa ở hộp riêng,
+// hiện bằng .show.
+function toggleChunkHelp(helpId, btnId) {
+  var help = document.getElementById(helpId);
+  if (!help) return;
+  var shown = help.classList.toggle('show');
+  var btn = document.getElementById(btnId);
+  if (btn) btn.classList.toggle('dlg-btn-on', shown);
 }
 
 // ----- Ghi đè speak()/speakRate() của file mẫu (giữ nguyên chữ ký) -----
@@ -2943,6 +3028,7 @@ function restartChunked(id) {
 function speakRate(text, rate) {
   if (!('speechSynthesis' in window)) return;
   stopChunked();
+  if (typeof stopDlg === 'function') { try { stopDlg(); } catch (e) {} }
   window.speechSynthesis.cancel();
   var u = new SpeechSynthesisUtterance(text);
   u.lang = 'zh-CN'; u.rate = rate || 0.88;
