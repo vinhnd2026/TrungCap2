@@ -17,7 +17,7 @@ Bộ bài học Trung cấp 2: 71 ngày, mỗi ngày 5 từ mới, học từ B�
 | HSK 3 — bản theo ngày (Homework) | 198 | 36 | [Mở](https://vinhnd2026.github.io/Homework/) |
 | Trung cấp 1 | 266 | 54 | [Mở](https://vinhnd2026.github.io/TrungCap1/) |
 | Trung cấp 2 | 355 | 71 | ⏳ đang hoàn thiện |
-| Trung cấp 3 | 236 | 48 | ⏳ đang hoàn thiện |
+| Trung cấp 3 | 236 | 48 | [Mở](https://vinhnd2026.github.io/TrungCap3/) |
 | Trung cấp 4 | 206 | 42 | ⏳ đang hoàn thiện |
 | Cao cấp 1 | 447 | 90 | ⏳ đang hoàn thiện |
 | Cao cấp 2 | 405 | 81 | ⏳ đang hoàn thiện |
