@@ -239,7 +239,7 @@ img, svg { max-width: 100%; }
   <div class="progress-bar">
     <span>🎯 Tiến độ:</span>
     <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-    <b id="prog-text">0 / 32</b>
+    <b id="prog-text">0 / 33</b>
     <button class="btn-sm active" id="ime-toggle-btn" onclick="toggleIME()" title="Bật/tắt chế độ gõ Pinyin trực tiếp">⌨️ Gõ Pinyin: BẬT</button>
     <button class="btn-sm" onclick="resetAll()" title="Xoá tiến độ làm lại">↺</button>
   </div>
@@ -570,7 +570,7 @@ img, svg { max-width: 100%; }
 <div class="word-meaning">Nghĩa: <b>tan làm; hết giờ làm</b></div>
 <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:12px;padding:10px 12px;margin:10px 0;line-height:1.7;">
 <div><b>⚠️ Động từ ly hợp:</b> 下班 tách thành 下 + 班.</div>
-<div>Đây là <b>động từ ly hợp</b> (离合动词): động từ + tân ngữ gộp thành một từ, nhưng khi thêm 了 / 过 hoặc số từ thì phải chèn <b>GIỮA hai phần</b>, không đặt sau cả từ — không nói *洗澡了, mà nói 洗了个澡.</div>
+<div>Đây là <b>động từ ly hợp</b> (离合动词): động từ + tân ngữ gộp thành một từ, nhưng khi thêm 了 / 过 hoặc số từ thì phải chèn <b>GIỮA hai phần</b>, không đặt sau cả từ — không nói *下班了, mà nói 下了班.</div>
 <div class="gram-ex"><button class="tts-btn" onclick="speakRate('他下了班，妈妈很高兴。', 0.88)">🔊</button> <span class="hide-ruby"><ruby>他<rt>Tā</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>了<rt>le</rt></ruby><ruby>班<rt>bān</rt></ruby>，<ruby>妈<rt>mā</rt></ruby><ruby>妈<rt>ma</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>高<rt>gāo</rt></ruby><ruby>兴<rt>xìng</rt></ruby>。</span> <span class="hint">(Anh ấy đã tan làm, mẹ rất vui.)</span></div>
 <div class="gram-ex"><button class="tts-btn" onclick="speakRate('他下过班，现在在家。', 0.88)">🔊</button> <span class="hide-ruby"><ruby>他<rt>Tā</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>过<rt>guò</rt></ruby><ruby>班<rt>bān</rt></ruby>，<ruby>现<rt>xiàn</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>家<rt>jiā</rt></ruby>。</span> <span class="hint">(Anh ấy từng tan làm, bây giờ đang ở nhà.)</span></div>
 </div>
@@ -637,7 +637,7 @@ img, svg { max-width: 100%; }
 <div class="word-meaning">Nghĩa: <b>đánh cờ; chơi cờ</b></div>
 <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:12px;padding:10px 12px;margin:10px 0;line-height:1.7;">
 <div><b>⚠️ Động từ ly hợp:</b> 下棋 tách thành 下 + 棋.</div>
-<div>Đây là <b>động từ ly hợp</b> (离合动词): động từ + tân ngữ gộp thành một từ, nhưng khi thêm 了 / 过 hoặc số từ thì phải chèn <b>GIỮA hai phần</b>, không đặt sau cả từ — không nói *洗澡了, mà nói 洗了个澡.</div>
+<div>Đây là <b>động từ ly hợp</b> (离合动词): động từ + tân ngữ gộp thành một từ, nhưng khi thêm 了 / 过 hoặc số từ thì phải chèn <b>GIỮA hai phần</b>, không đặt sau cả từ — không nói *下棋了, mà nói 下了棋.</div>
 <div class="gram-ex"><button class="tts-btn" onclick="speakRate('他下了棋，觉得很高兴。', 0.88)">🔊</button> <span class="hide-ruby"><ruby>他<rt>Tā</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>了<rt>le</rt></ruby><ruby>棋<rt>qí</rt></ruby>，<ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>高<rt>gāo</rt></ruby><ruby>兴<rt>xìng</rt></ruby>。</span> <span class="hint">(Anh ấy đã đánh cờ, thấy rất vui.)</span></div>
 <div class="gram-ex"><button class="tts-btn" onclick="speakRate('他下过棋，现在不下棋了。', 0.88)">🔊</button> <span class="hide-ruby"><ruby>他<rt>Tā</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>过<rt>guò</rt></ruby><ruby>棋<rt>qí</rt></ruby>，<ruby>现<rt>xiàn</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>不<rt>bú</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>棋<rt>qí</rt></ruby><ruby>了<rt>le</rt></ruby>。</span> <span class="hint">(Anh ấy từng đánh cờ, bây giờ không đánh cờ nữa.)</span></div>
 </div>
@@ -731,12 +731,13 @@ img, svg { max-width: 100%; }
 <div class="gram-ex"><button class="tts-btn" onclick="speakRate('那还用说，他很喜欢学校。', 0.88)">🔊</button> <span class="hide-ruby"><ruby>那<rt>Nà</rt></ruby><ruby>还<rt>hái</rt></ruby><ruby>用<rt>yòng</rt></ruby><ruby>说<rt>shuō</rt></ruby>，<ruby>他<rt>tā</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>喜<rt>xǐ</rt></ruby><ruby>欢<rt>huān</rt></ruby><ruby>学<rt>xué</rt></ruby><ruby>校<rt>xiào</rt></ruby>。</span> <span class="hint">(Còn phải nói, anh ấy rất thích trường.)</span></div>
 <div class="gram-ex"><button class="tts-btn" onclick="speakRate('那还用说，他很喜欢学习。', 0.88)">🔊</button> <span class="hide-ruby"><ruby>那<rt>Nà</rt></ruby><ruby>还<rt>hái</rt></ruby><ruby>用<rt>yòng</rt></ruby><ruby>说<rt>shuō</rt></ruby>，<ruby>他<rt>tā</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>喜<rt>xǐ</rt></ruby><ruby>欢<rt>huān</rt></ruby><ruby>学<rt>xué</rt></ruby><ruby>习<rt>xí</rt></ruby>。</span> <span class="hint">(Còn phải nói, anh ấy rất thích học.)</span></div>
 <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:12px;padding:10px 12px;margin:10px 0;line-height:1.7;">
-<div><b>📌 Động từ ly hợp:</b> Đây là <b>động từ ly hợp</b> (离合动词): động từ + tân ngữ gộp thành một từ, nhưng khi thêm 了 / 过 hoặc số từ thì phải chèn <b>GIỮA hai phần</b>, không đặt sau cả từ — không nói *洗澡了, mà nói 洗了个澡.</div>
-<div>Ví dụ quen thuộc: 洗澡 → 洗了个澡 (đã tắm một cái), 帮忙 → 帮了个忙 (đã giúp một tay).</div>
+<div><b>📌 Động từ ly hợp:</b> Đây là <b>động từ ly hợp</b> (离合动词): động từ + tân ngữ gộp thành một từ, nhưng khi thêm 了 / 过 hoặc số từ thì phải chèn <b>GIỮA hai phần</b>, không đặt sau cả từ.</div>
 <div style="margin-top:8px;"><b>下棋</b> (xiàqí) — tách thành 下 + 棋:</div>
+<div>Không nói *下棋了, mà nói 下了棋.</div>
 <div class="gram-ex"><button class="tts-btn" onclick="speakRate('他下了棋，觉得很高兴。', 0.88)">🔊</button> <span class="hide-ruby"><ruby>他<rt>Tā</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>了<rt>le</rt></ruby><ruby>棋<rt>qí</rt></ruby>，<ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>高<rt>gāo</rt></ruby><ruby>兴<rt>xìng</rt></ruby>。</span> <span class="hint">(Anh ấy đã đánh cờ, thấy rất vui.)</span></div>
 <div class="gram-ex"><button class="tts-btn" onclick="speakRate('他下过棋，现在不下棋了。', 0.88)">🔊</button> <span class="hide-ruby"><ruby>他<rt>Tā</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>过<rt>guò</rt></ruby><ruby>棋<rt>qí</rt></ruby>，<ruby>现<rt>xiàn</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>不<rt>bú</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>棋<rt>qí</rt></ruby><ruby>了<rt>le</rt></ruby>。</span> <span class="hint">(Anh ấy từng đánh cờ, bây giờ không đánh cờ nữa.)</span></div>
 <div style="margin-top:8px;"><b>下班</b> (xiàbān) — tách thành 下 + 班:</div>
+<div>Không nói *下班了, mà nói 下了班.</div>
 <div class="gram-ex"><button class="tts-btn" onclick="speakRate('他下了班，妈妈很高兴。', 0.88)">🔊</button> <span class="hide-ruby"><ruby>他<rt>Tā</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>了<rt>le</rt></ruby><ruby>班<rt>bān</rt></ruby>，<ruby>妈<rt>mā</rt></ruby><ruby>妈<rt>ma</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>高<rt>gāo</rt></ruby><ruby>兴<rt>xìng</rt></ruby>。</span> <span class="hint">(Anh ấy đã tan làm, mẹ rất vui.)</span></div>
 <div class="gram-ex"><button class="tts-btn" onclick="speakRate('他下过班，现在在家。', 0.88)">🔊</button> <span class="hide-ruby"><ruby>他<rt>Tā</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>过<rt>guò</rt></ruby><ruby>班<rt>bān</rt></ruby>，<ruby>现<rt>xiàn</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>家<rt>jiā</rt></ruby>。</span> <span class="hint">(Anh ấy từng tan làm, bây giờ đang ở nhà.)</span></div>
 </div>
@@ -789,6 +790,12 @@ img, svg { max-width: 100%; }
 <div><b>Câu 3:</b> Anh ấy đã tan làm, cũng đã đánh cờ, vì anh ấy thích tan làm, cũng thích đánh cờ, mẹ thấy rất tốt.</div>
 <div class="answer-zone"></div>
 <div class="word-bank" data-words="棋|，|了|下|很|下棋|也|。|喜欢|，|班|好|他|喜欢|下班|下|他|，|也|妈妈|觉得|了|因为|，"></div>
+<div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
+</div>
+<div class="scramble-box" id="scr-4" data-target="那还用说，爸爸很喜欢下棋。">
+<div><b>Câu 4:</b> Còn phải nói, bố rất thích chơi cờ.</div>
+<div class="answer-zone"></div>
+<div class="word-bank" data-words="爸爸|。|很|下棋|，|喜欢|那还用说"></div>
 <div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
 </div>
 </div>
@@ -941,7 +948,7 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📋 Tổng kết để gửi em <span class="badge">Câu cần ôn lại</span></h2>
-<div>Đúng <b id="sum-score">0 / 32</b> mục.</div>
+<div>Đúng <b id="sum-score">0 / 33</b> mục.</div>
 <ul class="summary-list" id="wrong-list"><li>Chưa có câu sai nào — anh làm đến đâu, câu sai sẽ tự gom vào đây.</li></ul>
 <div class="input-check">
 <button class="btn-primary" onclick="copySummary()">📋 Chép kết quả</button>
@@ -972,7 +979,7 @@ img, svg { max-width: 100%; }
 <script>
 // ====== Trạng thái + lưu trữ (localStorage) ======
 var LS_KEY = 'trungcap2-Day-63';
-var TOTAL_TASKS = 32;
+var TOTAL_TASKS = 33;
 var ITEM_INFO = {
   "rev-1": [
     "Ôn nhanh 1 (上次)",
@@ -1065,6 +1072,10 @@ var ITEM_INFO = {
   "scr-3": [
     "Sắp xếp câu 3",
     "他下了班，也下了棋，因为他喜欢下班，也喜欢下棋，妈妈觉得很好。"
+  ],
+  "scr-4": [
+    "Sắp xếp câu 4",
+    "那还用说，爸爸很喜欢下棋。"
   ],
   "read-1": [
     "Đọc hiểu câu 1",
