@@ -277,7 +277,7 @@ img, svg { max-width: 100%; }
 <button class="btn-sm" onclick="flashNext()">Tiếp ➡</button>
 <button class="btn-sm" onclick="flashReshuffle()">🔀 Trộn lại</button>
 <span class="flash-count" id="flash-count"></span>
-</div></div>
+</div></div><style>#flash-wrap .flash-card{height:216px}#flash-wrap .flash-ex{margin-top:7px;font-size:1.02rem;line-height:2;color:#1e3a8a}#flash-wrap .flash-ex ruby rt{font-size:.52em;color:#2563eb}#flash-wrap .flash-ex-label{font-size:.8rem;font-weight:700;color:#64748b}#flash-wrap .flash-ex-vi{font-size:.86rem;color:#475569}</style>
 <div class="card">
 <h2>1. 实习 — shíxí · thực tập <span class="badge">Động từ</span></h2>
 <div class="word-meaning">Nghĩa: <b>thực tập</b></div>
@@ -578,8 +578,8 @@ img, svg { max-width: 100%; }
 
 <div class="gram-intro">
 <div><b>Công thức:</b> Adj + 了</div>
-<div>Adj + 了 diễn tả trạng thái đã thay đổi so với trước: đã… rồi. 他高兴了 nghĩa là anh ấy vui rồi — trước đây chưa vui, bây giờ vui; 他很累了 nghĩa là anh ấy mệt rồi — trước đây chưa mệt, bây giờ mệt. Anh nhớ: một, 了 đứng cuối câu, sau tính từ; hai, Adj + 了 nhấn mạnh sự thay đổi, không phải mức độ; ba, đừng bỏ 了 khi muốn nói đã thay đổi — nói 他高兴 thì chỉ nói anh ấy vui nói chung, không nói được anh ấy đã vui lên.</div>
-<div class="gram-mistake"><div><b>⚠️ Lỗi thường gặp:</b> <span style="color:#b91c1c">✗ 今天冷，请穿上衣服。</span> → <span style="color:#15803d">✓ 今天冷了，请穿上衣服。</span></div><div>Adj + 了 chỉ trạng thái đã thay đổi (trời đã lạnh); thiếu 了 thì câu chỉ nói trời lạnh nói chung, không nhấn mạnh sự thay đổi.</div></div>
+<div>Adj + 了 diễn tả trạng thái đã thay đổi so với trước: đã… rồi. 他高兴了 nghĩa là anh ấy vui rồi — trước đây chưa vui, bây giờ vui; 他很累了 nghĩa là anh ấy mệt rồi — trước đây chưa mệt, bây giờ mệt. Anh nhớ: một, 了 đứng cuối câu, sau tính từ; hai, Adj + 了 nhấn mạnh sự thay đổi, không phải mức độ; ba, 他高兴 (không có 了) và 他高兴了 đều đúng — câu đầu nói trạng thái nói chung, câu sau nhấn mạnh trạng thái đã thay đổi; đừng coi câu thiếu 了 là câu sai.</div>
+<div class="gram-mistake"><div><b>⚠️ Lỗi thường gặp:</b> <span style="color:#b91c1c">✗ 孩子大长了。</span> → <span style="color:#15803d">✓ 孩子长大了。</span></div><div>长大 là một cụm động từ (lớn lên), 了 phải đứng sau CẢ cụm: 长大了. Chen 了 vào giữa cụm và đảo thứ tự (大长了) là sai.</div></div>
 </div>
 <div class="sub" style="margin-bottom:8px;">Nghe 5 ví dụ rồi làm 2 bài tập dưới đây:</div>
 <div class="gram-ex"><button class="tts-btn" onclick="speakRate('他高兴了。', 0.88)">🔊</button> <span class="hide-ruby"><ruby>他<rt>Tā</rt></ruby><ruby>高<rt>gāo</rt></ruby><ruby>兴<rt>xìng</rt></ruby><ruby>了<rt>le</rt></ruby>。</span> <span class="hint">(Anh ấy vui rồi.)</span></div>
@@ -591,15 +591,15 @@ img, svg { max-width: 100%; }
 <div class="q-item" id="gram-1">
 <div><b>1. Adj + 了:</b></div>
 <div class="mc-options">
-<button class="mc-btn" onclick="checkMC(this, false, 'gram-1', '✗ Sai: thiếu 了 cuối câu thì không nói được sự thay đổi — 他高兴了 mới đúng.')">A. 他高兴。</button>
-<button class="mc-btn" onclick="checkMC(this, true, 'gram-1', '✓ Đúng! Adj + 了 chỉ trạng thái đã thay đổi.')">B. 他高兴了。</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'gram-1', '✗ Sai: 了 của mẫu Adj + 了 đứng CUỐI câu — 他很高兴了; không đặt 了 trước tính từ.')">A. 他了很高兴。</button>
+<button class="mc-btn" onclick="checkMC(this, true, 'gram-1', '✓ Đúng! 了 đứng cuối câu, sau tính từ, chỉ trạng thái đã thay đổi.')">B. 他很高兴了。</button>
 </div>
 <div class="feedback" style="margin-top:6px;"></div></div>
 <div class="q-item" id="gram-2">
-<div><b>2. Sửa câu sai sau: 他很累。:</b></div>
+<div><b>2. Sửa câu sai sau: 他了很累。:</b></div>
 <div class="mc-options">
-<button class="mc-btn" onclick="checkMC(this, true, 'gram-2', '✓ Đúng! Adj + 了 chỉ trạng thái đã thay đổi (đã mệt rồi); thiếu 了 thì câu chỉ nói mệt nói chung, không nhấn mạnh sự thay đổi.')">A. 他很累了。</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'gram-2', '✗ Chưa đúng. Adj + 了 chỉ trạng thái đã thay đổi (đã mệt rồi); thiếu 了 thì câu chỉ nói mệt nói chung, không nhấn mạnh sự thay đổi.')">B. 他很累。</button>
+<button class="mc-btn" onclick="checkMC(this, true, 'gram-2', '✓ Đúng! 了 đứng cuối câu, sau tính từ: 他很累了 (anh ấy đã mệt rồi). Đặt 了 trước tính từ (他了很累) là sai vị trí.')">A. 他很累了。</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'gram-2', '✗ Chưa đúng. 了 đứng cuối câu, sau tính từ: 他很累了 (anh ấy đã mệt rồi). Đặt 了 trước tính từ (他了很累) là sai vị trí.')">B. 他了很累。</button>
 </div>
 <div class="feedback" style="margin-top:6px;"></div></div>
 </div>
@@ -653,10 +653,10 @@ img, svg { max-width: 100%; }
 <div class="reading-zh hide-ruby">
 <section class="read-para">
 <div class="read-para-head"><button class="tts-btn" onclick="playChunked('read', 0.88, 0, 4)">🔊 Nghe đoạn này</button></div>
-<p class="read-para-text"><ruby>学<rt>Xué</rt></ruby><ruby>生<rt>shēng</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>实<rt>shí</rt></ruby><ruby>习<rt>xí</rt></ruby>，<ruby>老<rt>lǎo</rt></ruby><ruby>师<rt>shī</rt></ruby><ruby>知<rt>zhī</rt></ruby><ruby>道<rt>dào</rt></ruby>。 <ruby>她<rt>Tā</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>提<rt>tí</rt></ruby><ruby>水<rt>shuǐ</rt></ruby>，<ruby>水<rt>shuǐ</rt></ruby><ruby>盆<rt>pén</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>水<rt>shuǐ</rt></ruby>，<ruby>碗<rt>wǎn</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>饭<rt>fàn</rt></ruby>。 <ruby>他<rt>Tā</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>睡<rt>shuì</rt></ruby><ruby>神<rt>shén</rt></ruby>，<ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>早<rt>zǎo</rt></ruby><ruby>上<rt>shàng</rt></ruby><ruby>起<rt>qǐ</rt></ruby><ruby>床<rt>chuáng</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>晚<rt>wǎn</rt></ruby>，<ruby>妈<rt>mā</rt></ruby><ruby>妈<rt>mā</rt></ruby><ruby>知<rt>zhī</rt></ruby><ruby>道<rt>dào</rt></ruby>。 <ruby>学<rt>Xué</rt></ruby><ruby>生<rt>shēng</rt></ruby><ruby>提<rt>tí</rt></ruby><ruby>水<rt>shuǐ</rt></ruby><ruby>来<rt>lái</rt></ruby><ruby>了<rt>le</rt></ruby>，<ruby>老<rt>lǎo</rt></ruby><ruby>师<rt>shī</rt></ruby><ruby>知<rt>zhī</rt></ruby><ruby>道<rt>dào</rt></ruby>。 <ruby>碗<rt>Wǎn</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>饭<rt>fàn</rt></ruby>，<ruby>饭<rt>fàn</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby><ruby>吃<rt>chī</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby>。</p>
+<p class="read-para-text"><ruby>姐<rt>Jiě</rt></ruby><ruby>姐<rt>jie</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>实<rt>shí</rt></ruby><ruby>习<rt>xí</rt></ruby>。 <ruby>她<rt>Tā</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>提<rt>tí</rt></ruby><ruby>水<rt>shuǐ</rt></ruby>、<ruby>端<rt>duān</rt></ruby><ruby>碗<rt>wǎn</rt></ruby>，<ruby>工<rt>gōng</rt></ruby><ruby>作<rt>zuò</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>辛<rt>xīn</rt></ruby><ruby>苦<rt>kǔ</rt></ruby>。 <ruby>饭<rt>Fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>一<rt>yí</rt></ruby><ruby>个<rt>gè</rt></ruby><ruby>大<rt>dà</rt></ruby><ruby>水<rt>shuǐ</rt></ruby><ruby>盆<rt>pén</rt></ruby>，<ruby>里<rt>lǐ</rt></ruby><ruby>面<rt>miàn</rt></ruby><ruby>都<rt>dōu</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>水<rt>shuǐ</rt></ruby>。 <ruby>弟<rt>Dì</rt></ruby><ruby>弟<rt>di</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>个<rt>gè</rt></ruby><ruby>睡<rt>shuì</rt></ruby><ruby>神<rt>shén</rt></ruby>，<ruby>在<rt>zài</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>睡<rt>shuì</rt></ruby><ruby>到<rt>dào</rt></ruby><ruby>中<rt>zhōng</rt></ruby><ruby>午<rt>wǔ</rt></ruby><ruby>才<rt>cái</rt></ruby><ruby>起<rt>qǐ</rt></ruby><ruby>床<rt>chuáng</rt></ruby>。 <ruby>妈<rt>Mā</rt></ruby><ruby>妈<rt>ma</rt></ruby><ruby>说<rt>shuō</rt></ruby>，<ruby>姐<rt>jiě</rt></ruby><ruby>姐<rt>jie</rt></ruby><ruby>比<rt>bǐ</rt></ruby><ruby>弟<rt>dì</rt></ruby><ruby>弟<rt>di</rt></ruby><ruby>努<rt>nǔ</rt></ruby><ruby>力<rt>lì</rt></ruby>，<ruby>弟<rt>dì</rt></ruby><ruby>弟<rt>di</rt></ruby><ruby>太<rt>tài</rt></ruby><ruby>爱<rt>ài</rt></ruby><ruby>睡<rt>shuì</rt></ruby><ruby>觉<rt>jiào</rt></ruby><ruby>了<rt>le</rt></ruby>。</p>
 </section>
 </div>
-<script>window.CHUNK_DATA = window.CHUNK_DATA || {}; window.CHUNK_DATA['read'] = ["学生在饭店实习，老师知道。", "她在饭店提水，水盆里有水，碗里有饭。", "他是睡神，每天早上起床很晚，妈妈知道。", "学生提水来了，老师知道。", "碗里有饭，饭很好吃，我觉得很好。"];</script>
+<script>window.CHUNK_DATA = window.CHUNK_DATA || {}; window.CHUNK_DATA['read'] = ["姐姐在一家饭店实习。", "她每天提水、端碗，工作很辛苦。", "饭店里有一个大水盆，里面都是水。", "弟弟是个睡神，在家睡到中午才起床。", "妈妈说，姐姐比弟弟努力，弟弟太爱睡觉了。"];</script>
 <div class="reading-Controls">
 <button class="tts-btn dlg-play-btn" id="chunk-play-read" onclick="toggleChunkPlay('read')" title="Nghe / Tạm dừng">▶️</button>
 <button class="tts-btn" onclick="restartChunked('read')">↺ Nghe lại từ đầu</button>
@@ -665,40 +665,40 @@ img, svg { max-width: 100%; }
 <button class="btn-sm" onclick="document.querySelector('.reading-zh').classList.toggle('hide-ruby')">🔤 Ẩn/Hiện Pinyin trên chữ</button>
 </div>
 <div class="reading-help" id="read-help">
-<div class="read-para-trans"><p>Học sinh thực tập ở nhà hàng, thầy cô biết. Cô ấy xách nước ở nhà hàng, trong chậu có nước, trong bát có cơm. Anh ấy là thần ngủ, sáng nào cũng dậy rất muộn, mẹ biết. Học sinh xách nước đến rồi, thầy cô biết. Trong bát có cơm, cơm rất ngon, tôi thấy rất tốt.</p></div>
+<div class="read-para-trans"><p>Chị gái thực tập ở một nhà hàng. Ngày nào chị cũng xách nước, bưng bát, công việc rất vất vả. Trong nhà hàng có một cái chậu nước lớn, bên trong toàn là nước. Em trai là thần ngủ, ở nhà ngủ đến trưa mới dậy. Mẹ nói, chị gái chăm chỉ hơn em trai, em trai quá ham ngủ.</p></div>
 </div>
 </div>
 <div class="q-item read-q" id="read-1">
-<div class="read-q-head"><span class="read-q-num">1</span><span>谁在实习？</span></div>
+<div class="read-q-head"><span class="read-q-num">1</span><span>姐姐在哪里实习？</span></div>
 <div class="mc-options">
-<button class="mc-btn" onclick="checkMC(this, true, 'read-1', '✓ Chính xác! 学生在饭店实习，老师知道。')">A. 学生</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'read-1', '✗ Chưa đúng: 学生在饭店实习，老师知道。')">B. 爸爸</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'read-1', '✗ Chưa đúng: 学生在饭店实习，老师知道。')">C. 妈妈</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'read-1', '✗ Chưa đúng: 学生在饭店实习，老师知道。')">D. 老师</button>
+<button class="mc-btn" onclick="checkMC(this, true, 'read-1', '✓ Chính xác! 姐姐在一家饭店实习。')">A. 饭店</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'read-1', '✗ Chưa đúng: 姐姐在一家饭店实习。')">B. 学院</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'read-1', '✗ Chưa đúng: 姐姐在一家饭店实习。')">C. 商店</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'read-1', '✗ Chưa đúng: 姐姐在一家饭店实习。')">D. 学校</button>
 </div>
 <div class="feedback" style="margin-top:6px;"></div></div>
 <div class="q-item read-q" id="read-2">
-<div class="read-q-head"><span class="read-q-num">2</span><span>水盆里有什么？</span></div>
+<div class="read-q-head"><span class="read-q-num">2</span><span>饭店里的大水盆里有什么？</span></div>
 <div class="mc-options">
-<button class="mc-btn" onclick="checkMC(this, false, 'read-2', '✗ Chưa đúng: 她在饭店提水，水盆里有水，碗里有饭。')">A. 饭</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'read-2', '✗ Chưa đúng: 她在饭店提水，水盆里有水，碗里有饭。')">B. 蜂蜜</button>
-<button class="mc-btn" onclick="checkMC(this, true, 'read-2', '✓ Chính xác! 她在饭店提水，水盆里有水，碗里有饭。')">C. 水</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'read-2', '✗ Chưa đúng: 她在饭店提水，水盆里有水，碗里有饭。')">D. 杂志</button>
+<button class="mc-btn" onclick="checkMC(this, true, 'read-2', '✓ Chính xác! 饭店里有一个大水盆，里面都是水。')">A. 水</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'read-2', '✗ Chưa đúng: 饭店里有一个大水盆，里面都是水。')">B. 碗</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'read-2', '✗ Chưa đúng: 饭店里有一个大水盆，里面都是水。')">C. 饭</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'read-2', '✗ Chưa đúng: 饭店里有一个大水盆，里面都是水。')">D. 茶</button>
 </div>
 <div class="feedback" style="margin-top:6px;"></div></div>
 <div class="q-item read-q" id="read-3">
-<div class="read-q-head"><span class="read-q-num">3</span><span>碗里有什么？</span></div>
+<div class="read-q-head"><span class="read-q-num">3</span><span>弟弟是个什么？</span></div>
 <div class="mc-options">
-<button class="mc-btn" onclick="checkMC(this, false, 'read-3', '✗ Chưa đúng: 碗里有饭，饭很好吃，我觉得很好。')">A. 蜂蜜</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'read-3', '✗ Chưa đúng: 碗里有饭，饭很好吃，我觉得很好。')">B. 水</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'read-3', '✗ Chưa đúng: 碗里有饭，饭很好吃，我觉得很好。')">C. 杂志</button>
-<button class="mc-btn" onclick="checkMC(this, true, 'read-3', '✓ Chính xác! 碗里有饭，饭很好吃，我觉得很好。')">D. 饭</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'read-3', '✗ Chưa đúng: 弟弟是个睡神，在家睡到中午才起床。')">A. 京剧迷</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'read-3', '✗ Chưa đúng: 弟弟是个睡神，在家睡到中午才起床。')">B. 学生</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'read-3', '✗ Chưa đúng: 弟弟是个睡神，在家睡到中午才起床。')">C. 工程师</button>
+<button class="mc-btn" onclick="checkMC(this, true, 'read-3', '✓ Chính xác! 弟弟是个睡神，在家睡到中午才起床。')">D. 睡神</button>
 </div>
 <div class="feedback" style="margin-top:6px;"></div></div>
 </div>
 <div class="card">
 <h2>🎧 Bài 8: Nghe hội thoại – Suy luận <span class="badge">Nghe hiểu Trung cấp 2</span></h2>
-<div class="sub" style="margin-bottom:8px;">Nghe đoạn hội thoại giữa 小红 và 小明 (14 câu), rồi chọn đáp án đúng cho 4 câu hỏi bên dưới. Lời thoại đang ẩn — hãy nghe trước, chỉ hiện lời thoại khi nghe không rõ. Tình huống: 小红 thực tập ở nhà hàng, 小明 là người mê ngủ nhưng hôm nay dậy sớm để xem bạn thực tập.</div>
+<div class="sub" style="margin-bottom:8px;">Nghe đoạn hội thoại giữa 小红 và 小明 (11 câu), rồi chọn đáp án đúng cho 4 câu hỏi bên dưới. Lời thoại đang ẩn — hãy nghe trước, chỉ hiện lời thoại khi nghe không rõ. Tình huống: 小红 thực tập ở nhà hàng, 小明 là người mê ngủ nhưng hôm nay dậy sớm để xem bạn thực tập.</div>
 <div class="reading-box">
 <div class="reading-Controls dlg-controls-row">
 <span class="hint">Tốc độ:</span>
@@ -711,59 +711,56 @@ img, svg { max-width: 100%; }
 </div>
 <div id="dlg-voice-pickers" style="margin-top:8px;"><span class="hint">Đang kiểm tra giọng đọc trên thiết bị…</span></div>
 <div class="hint" id="dlg-voice-note" style="margin-top:4px;"></div>
-<div style="margin:8px 0;"><span class="hint">Nghe từng câu:</span> <button class="tts-btn" onclick="playDlgLine(0)">1</button> <button class="tts-btn" onclick="playDlgLine(1)">2</button> <button class="tts-btn" onclick="playDlgLine(2)">3</button> <button class="tts-btn" onclick="playDlgLine(3)">4</button> <button class="tts-btn" onclick="playDlgLine(4)">5</button> <button class="tts-btn" onclick="playDlgLine(5)">6</button> <button class="tts-btn" onclick="playDlgLine(6)">7</button> <button class="tts-btn" onclick="playDlgLine(7)">8</button> <button class="tts-btn" onclick="playDlgLine(8)">9</button> <button class="tts-btn" onclick="playDlgLine(9)">10</button> <button class="tts-btn" onclick="playDlgLine(10)">11</button> <button class="tts-btn" onclick="playDlgLine(11)">12</button> <button class="tts-btn" onclick="playDlgLine(12)">13</button> <button class="tts-btn" onclick="playDlgLine(13)">14</button></div>
+<div style="margin:8px 0;"><span class="hint">Nghe từng câu:</span> <button class="tts-btn" onclick="playDlgLine(0)">1</button> <button class="tts-btn" onclick="playDlgLine(1)">2</button> <button class="tts-btn" onclick="playDlgLine(2)">3</button> <button class="tts-btn" onclick="playDlgLine(3)">4</button> <button class="tts-btn" onclick="playDlgLine(4)">5</button> <button class="tts-btn" onclick="playDlgLine(5)">6</button> <button class="tts-btn" onclick="playDlgLine(6)">7</button> <button class="tts-btn" onclick="playDlgLine(7)">8</button> <button class="tts-btn" onclick="playDlgLine(8)">9</button> <button class="tts-btn" onclick="playDlgLine(9)">10</button> <button class="tts-btn" onclick="playDlgLine(10)">11</button></div>
 <div class="dlg-script" id="dlg-script" style="display:none">
-<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>小<rt>Xiǎo</rt></ruby><ruby>明<rt>míng</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>实<rt>shí</rt></ruby><ruby>习<rt>xí</rt></ruby>。<ruby>你<rt>Nǐ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>呢<rt>ne</rt></ruby>？</span><div class="dlg-vi">Tiểu Minh, tôi đang thực tập ở nhà hàng. Bạn thấy sao?</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>你<rt>Nǐ</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>实<rt>shí</rt></ruby><ruby>习<rt>xí</rt></ruby><ruby>做<rt>zuò</rt></ruby><ruby>什<rt>shén</rt></ruby><ruby>么<rt>me</rt></ruby>？<ruby>请<rt>qǐng</rt></ruby><ruby>告<rt>gào</rt></ruby><ruby>诉<rt>su</rt></ruby><ruby>我<rt>wǒ</rt></ruby>，<ruby>你<rt>Nǐ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>怎<rt>zěn</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>样<rt>yàng</rt></ruby>？</span><div class="dlg-vi">Bạn thực tập ở nhà hàng làm gì? Hãy nói cho tôi biết, bạn thấy thế nào?</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>我<rt>Wǒ</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>提<rt>tí</rt></ruby><ruby>水<rt>shuǐ</rt></ruby><ruby>盆<rt>pén</rt></ruby>，<ruby>水<rt>shuǐ</rt></ruby><ruby>盆<rt>pén</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>水<rt>shuǐ</rt></ruby>，<ruby>客<rt>kè</rt></ruby><ruby>人<rt>rén</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>喝<rt>hē</rt></ruby><ruby>水<rt>shuǐ</rt></ruby>。</span><div class="dlg-vi">Tôi xách chậu nước ở nhà hàng, trong chậu có nước, khách muốn uống nước.</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>你<rt>Nǐ</rt></ruby><ruby>提<rt>tí</rt></ruby><ruby>水<rt>shuǐ</rt></ruby><ruby>盆<rt>pén</rt></ruby><ruby>做<rt>zuò</rt></ruby><ruby>什<rt>shén</rt></ruby><ruby>么<rt>me</rt></ruby>？<ruby>请<rt>qǐng</rt></ruby><ruby>告<rt>gào</rt></ruby><ruby>诉<rt>su</rt></ruby><ruby>我<rt>wǒ</rt></ruby>，<ruby>你<rt>Nǐ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>水<rt>shuǐ</rt></ruby><ruby>盆<rt>pén</rt></ruby><ruby>怎<rt>zěn</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>样<rt>yàng</rt></ruby>？</span><div class="dlg-vi">Bạn xách chậu nước để làm gì? Hãy nói cho tôi biết, bạn thấy thế nào?</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>我<rt>Wǒ</rt></ruby><ruby>提<rt>tí</rt></ruby><ruby>水<rt>shuǐ</rt></ruby><ruby>盆<rt>pén</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby>，<ruby>碗<rt>wǎn</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>水<rt>shuǐ</rt></ruby><ruby>盆<rt>pén</rt></ruby><ruby>里<rt>lǐ</rt></ruby>。</span><div class="dlg-vi">Tôi xách chậu nước đến nhà hàng, bát ở trong chậu nước.</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>碗<rt>Wǎn</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>什<rt>shén</rt></ruby><ruby>么<rt>me</rt></ruby>？<ruby>我<rt>wǒ</rt></ruby><ruby>想<rt>xiǎng</rt></ruby><ruby>知<rt>zhī</rt></ruby><ruby>道<rt>dào</rt></ruby>，<ruby>你<rt>Nǐ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>怎<rt>zěn</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>样<rt>yàng</rt></ruby>？</span><div class="dlg-vi">Trong bát có gì? Tôi muốn biết, bạn thấy thế nào?</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>碗<rt>Wǎn</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>米<rt>mǐ</rt></ruby><ruby>饭<rt>fàn</rt></ruby>。<ruby>我<rt>wǒ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>这<rt>zhè</rt></ruby><ruby>样<rt>yàng</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby>，<ruby>你<rt>Nǐ</rt></ruby><ruby>也<rt>yě</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby><ruby>吗<rt>ma</rt></ruby>？</span><div class="dlg-vi">Trong bát có cơm. Tôi thấy như vậy rất tốt, bạn cũng thấy rất tốt phải không?</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>你<rt>Nǐ</rt></ruby><ruby>实<rt>shí</rt></ruby><ruby>习<rt>xí</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>忙<rt>máng</rt></ruby><ruby>吗<rt>ma</rt></ruby>？<ruby>我<rt>wǒ</rt></ruby><ruby>想<rt>xiǎng</rt></ruby><ruby>知<rt>zhī</rt></ruby><ruby>道<rt>dào</rt></ruby>，<ruby>你<rt>Nǐ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>忙<rt>máng</rt></ruby><ruby>怎<rt>zěn</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>样<rt>yàng</rt></ruby>？</span><div class="dlg-vi">Bạn thực tập có bận không? Tôi muốn biết, bạn thấy thế nào?</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>是<rt>Shì</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>实<rt>shí</rt></ruby><ruby>习<rt>xí</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>忙<rt>máng</rt></ruby>，<ruby>可<rt>kě</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>高<rt>gāo</rt></ruby><ruby>兴<rt>xìng</rt></ruby>。<ruby>我<rt>wǒ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>这<rt>zhè</rt></ruby><ruby>样<rt>yàng</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby>。</span><div class="dlg-vi">Đúng, tôi thực tập rất bận, nhưng tôi rất vui. Tôi thấy như vậy rất tốt.</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>你<rt>Nǐ</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>早<rt>zǎo</rt></ruby><ruby>上<rt>shang</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>吗<rt>ma</rt></ruby>？<ruby>我<rt>wǒ</rt></ruby><ruby>想<rt>xiǎng</rt></ruby><ruby>知<rt>zhī</rt></ruby><ruby>道<rt>dào</rt></ruby>，<ruby>你<rt>Nǐ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>怎<rt>zěn</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>样<rt>yàng</rt></ruby>？</span><div class="dlg-vi">Bạn đến nhà hàng mỗi sáng à？ Tôi muốn biết, bạn thấy thế nào?</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>是<rt>Shì</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>早<rt>zǎo</rt></ruby><ruby>上<rt>shàng</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby>。<ruby>你<rt>Nǐ</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>睡<rt>shuì</rt></ruby><ruby>神<rt>shén</rt></ruby><ruby>吗<rt>ma</rt></ruby>？<ruby>你<rt>Nǐ</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>早<rt>zǎo</rt></ruby><ruby>上<rt>shàng</rt></ruby><ruby>几<rt>jǐ</rt></ruby><ruby>点<rt>diǎn</rt></ruby><ruby>起<rt>qǐ</rt></ruby><ruby>床<rt>chuáng</rt></ruby>？</span><div class="dlg-vi">Đúng, tôi đến nhà hàng mỗi sáng. Bạn có phải là thần ngủ không? Bạn dậy lúc mấy giờ mỗi sáng?</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>是<rt>Shì</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>睡<rt>shuì</rt></ruby><ruby>神<rt>shén</rt></ruby>。<ruby>我<rt>Wǒ</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>早<rt>zǎo</rt></ruby><ruby>上<rt>shang</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>晚<rt>wǎn</rt></ruby><ruby>起<rt>qǐ</rt></ruby><ruby>床<rt>chuáng</rt></ruby>。<ruby>我<rt>wǒ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby>。</span><div class="dlg-vi">Đúng, tôi là người mê ngủ. Tôi thức dậy rất muộn mỗi sáng. Tôi thấy rất tốt.</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>你<rt>Nǐ</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>睡<rt>shuì</rt></ruby><ruby>神<rt>shén</rt></ruby>，<ruby>可<rt>kě</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>你<rt>nǐ</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>早<rt>zǎo</rt></ruby>。<ruby>真<rt>zhēn</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby>，<ruby>你<rt>Nǐ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>呢<rt>ne</rt></ruby>？</span><div class="dlg-vi">Bạn là người mê ngủ, nhưng hôm nay bạn rất sớm. Thật sự rất tốt, bạn thấy sao?</div></div>
-<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>是<rt>Shì</rt></ruby>，<ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>早<rt>zǎo</rt></ruby>，<ruby>因<rt>yīn</rt></ruby><ruby>为<rt>wèi</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>看<rt>kàn</rt></ruby><ruby>你<rt>nǐ</rt></ruby><ruby>实<rt>shí</rt></ruby><ruby>习<rt>xí</rt></ruby>。<ruby>我<rt>wǒ</rt></ruby><ruby>觉<rt>jué</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby>。</span><div class="dlg-vi">Đúng, hôm nay tôi rất sớm, vì tôi muốn xem bạn thực tập. Tôi thấy rất tốt.</div></div>
+<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>小<rt>Xiǎo</rt></ruby><ruby>明<rt>míng</rt></ruby>，<ruby>你<rt>nǐ</rt></ruby><ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>怎<rt>zěn</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>这<rt>zhè</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>早<rt>zǎo</rt></ruby><ruby>就<rt>jiù</rt></ruby><ruby>来<rt>lái</rt></ruby><ruby>了<rt>le</rt></ruby>？</span><div class="dlg-vi">Tiểu Minh, sao hôm nay cậu đến sớm thế?</div></div>
+<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>我<rt>Wǒ</rt></ruby><ruby>来<rt>lái</rt></ruby><ruby>看<rt>kàn</rt></ruby><ruby>你<rt>nǐ</rt></ruby><ruby>实<rt>shí</rt></ruby><ruby>习<rt>xí</rt></ruby><ruby>呀<rt>ya</rt></ruby>！<ruby>听<rt>Tīng</rt></ruby><ruby>说<rt>shuō</rt></ruby><ruby>你<rt>nǐ</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>实<rt>shí</rt></ruby><ruby>习<rt>xí</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>早<rt>zǎo</rt></ruby><ruby>就<rt>jiù</rt></ruby><ruby>起<rt>qǐ</rt></ruby><ruby>床<rt>chuáng</rt></ruby><ruby>了<rt>le</rt></ruby>。</span><div class="dlg-vi">Mình đến xem cậu thực tập đấy! Nghe nói cậu thực tập ở nhà hàng, mình dậy từ sớm.</div></div>
+<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>你<rt>Nǐ</rt></ruby><ruby>不<rt>bú</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>睡<rt>shuì</rt></ruby><ruby>神<rt>shén</rt></ruby><ruby>吗<rt>ma</rt></ruby>？<ruby>每<rt>Měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>都<rt>dōu</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>睡<rt>shuì</rt></ruby><ruby>到<rt>dào</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>晚<rt>wǎn</rt></ruby>。</span><div class="dlg-vi">Cậu không phải thần ngủ à? Ngày nào cũng ngủ đến muộn cơ mà.</div></div>
+<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>今<rt>Jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>不<rt>bù</rt></ruby><ruby>一<rt>yí</rt></ruby><ruby>样<rt>yàng</rt></ruby>。<ruby>你<rt>Nǐ</rt></ruby><ruby>看<rt>kàn</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>还<rt>huán</rt></ruby><ruby>给<rt>gěi</rt></ruby><ruby>你<rt>nǐ</rt></ruby><ruby>买<rt>mǎi</rt></ruby><ruby>了<rt>le</rt></ruby><ruby>早<rt>zǎo</rt></ruby><ruby>饭<rt>fàn</rt></ruby>。</span><div class="dlg-vi">Hôm nay khác chứ. Cậu xem, mình còn mua đồ ăn sáng cho cậu này.</div></div>
+<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>谢<rt>Xiè</rt></ruby><ruby>谢<rt>xie</rt></ruby>！<ruby>我<rt>Wǒ</rt></ruby><ruby>先<rt>xiān</rt></ruby><ruby>把<rt>bǎ</rt></ruby><ruby>水<rt>shuǐ</rt></ruby><ruby>盆<rt>pén</rt></ruby><ruby>和<rt>hé</rt></ruby><ruby>碗<rt>wǎn</rt></ruby><ruby>送<rt>sòng</rt></ruby><ruby>到<rt>dào</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>面<rt>miàn</rt></ruby><ruby>去<rt>qù</rt></ruby>。</span><div class="dlg-vi">Cảm ơn! Mình mang chậu nước vào trong trước đã, trong chậu toàn là bát.</div></div>
+<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>水<rt>Shuǐ</rt></ruby><ruby>盆<rt>pén</rt></ruby><ruby>重<rt>zhòng</rt></ruby><ruby>不<rt>bù</rt></ruby><ruby>重<rt>zhòng</rt></ruby>？<ruby>我<rt>Wǒ</rt></ruby><ruby>帮<rt>bāng</rt></ruby><ruby>你<rt>nǐ</rt></ruby><ruby>提<rt>tí</rt></ruby><ruby>吧<rt>ba</rt></ruby>。</span><div class="dlg-vi">Chậu nước có nặng không? Để mình mang giúp.</div></div>
+<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>有<rt>Yǒu</rt></ruby><ruby>点<rt>diǎn</rt></ruby><ruby>儿<rt>ér</rt></ruby><ruby>重<rt>zhòng</rt></ruby>。<ruby>谢<rt>Xiè</rt></ruby><ruby>谢<rt>xie</rt></ruby><ruby>你<rt>nǐ</rt></ruby>，<ruby>你<rt>nǐ</rt></ruby><ruby>真<rt>zhēn</rt></ruby><ruby>好<rt>hǎo</rt></ruby><ruby>哇<rt>wa</rt></ruby>！</span><div class="dlg-vi">Hơi nặng. Cảm ơn cậu, cậu tốt thật đấy!</div></div>
+<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>你<rt>Nǐ</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>店<rt>diàn</rt></ruby><ruby>实<rt>shí</rt></ruby><ruby>习<rt>xí</rt></ruby>，<ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>都<rt>dōu</rt></ruby><ruby>做<rt>zuò</rt></ruby><ruby>什<rt>shén</rt></ruby><ruby>么<rt>me</rt></ruby>？</span><div class="dlg-vi">Cậu thực tập ở nhà hàng, mỗi ngày làm những gì?</div></div>
+<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>提<rt>Tí</rt></ruby><ruby>水<rt>shuǐ</rt></ruby><ruby>盆<rt>pén</rt></ruby>、<ruby>送<rt>sòng</rt></ruby><ruby>菜<rt>cài</rt></ruby>，<ruby>还<rt>hái</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>帮<rt>bāng</rt></ruby><ruby>客<rt>kè</rt></ruby><ruby>人<rt>rén</rt></ruby><ruby>点<rt>diǎn</rt></ruby><ruby>菜<rt>cài</rt></ruby>。<ruby>很<rt>Hěn</rt></ruby><ruby>忙<rt>máng</rt></ruby>，<ruby>可<rt>kě</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>意<rt>yì</rt></ruby><ruby>思<rt>si</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>喜<rt>xǐ</rt></ruby><ruby>欢<rt>huan</rt></ruby>。</span><div class="dlg-vi">Mang chậu nước, bưng món, còn phải nói chuyện với khách. Bận lắm, nhưng học được nhiều điều.</div></div>
+<div class="dlg-line"><span class="dlg-sp" style="background:#2563eb">小明</span> <span class="dlg-zh hide-ruby"><ruby>你<rt>Nǐ</rt></ruby><ruby>累<rt>lèi</rt></ruby><ruby>不<rt>bù</rt></ruby><ruby>累<rt>lèi</rt></ruby>？<ruby>要<rt>Yào</rt></ruby><ruby>不<rt>bù</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>休<rt>xiū</rt></ruby><ruby>息<rt>xi</rt></ruby><ruby>一<rt>yí</rt></ruby><ruby>会<rt>huì</rt></ruby><ruby>儿<rt>ér</rt></ruby>？</span><div class="dlg-vi">Cậu có mệt không? Có muốn nghỉ một lát không?</div></div>
+<div class="dlg-line"><span class="dlg-sp" style="background:#db2777">小红</span> <span class="dlg-zh hide-ruby"><ruby>不<rt>Bú</rt></ruby><ruby>累<rt>lèi</rt></ruby>。<ruby>我<rt>Wǒ</rt></ruby><ruby>一<rt>yí</rt></ruby><ruby>会<rt>huì</rt></ruby><ruby>儿<rt>ér</rt></ruby><ruby>就<rt>jiù</rt></ruby><ruby>做<rt>zuò</rt></ruby><ruby>完<rt>wán</rt></ruby><ruby>了<rt>le</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>们<rt>men</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>起<rt>qǐ</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>吃<rt>chī</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>吧<rt>ba</rt></ruby>。</span><div class="dlg-vi">Không mệt. Mười một giờ mình xong việc, chúng mình cùng đi ăn nhé.</div></div>
 </div>
 <div class="hint" id="dlg-tip">💡 Mẹo: nghe 2–3 lần trước khi hiện lời thoại. Chọn giọng cho từng người ở trên — giọng nam cho người nam, giọng nữ cho người nữ, bấm 🔊 Nghe thử để nghe giọng trước khi chọn.</div>
 </div>
 <div class="q-item" id="dlg-1">
-<div><b>Câu 1.</b> 小红在哪儿实习？</div>
+<div><b>Câu 1.</b> 小明今天为什么来得很早？</div>
 <div class="mc-options">
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-1', '✗ Chưa đúng! 小红：小明，我在饭店实习。你觉得呢？')">A. 公司</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-1', '✗ Chưa đúng! 小红：小明，我在饭店实习。你觉得呢？')">B. 大学</button>
-<button class="mc-btn" onclick="checkMC(this, true, 'dlg-1', '✓ Chính xác! 小红：小明，我在饭店实习。你觉得呢？')">C. 饭店</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-1', '✗ Chưa đúng! 小红：小明，我在饭店实习。你觉得呢？')">D. 学院</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-1', '✗ Chưa đúng! 小明：我来看你实习呀！听说你在饭店实习，我很早就起床了。')">A. 去买东西</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-1', '✗ Chưa đúng! 小明：我来看你实习呀！听说你在饭店实习，我很早就起床了。')">B. 去上课</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-1', '✗ Chưa đúng! 小明：我来看你实习呀！听说你在饭店实习，我很早就起床了。')">C. 去工作</button>
+<button class="mc-btn" onclick="checkMC(this, true, 'dlg-1', '✓ Chính xác! 小明：我来看你实习呀！听说你在饭店实习，我很早就起床了。')">D. 来看小红实习</button>
 </div>
 <div class="feedback" style="margin-top:6px;"></div></div>
 <div class="q-item" id="dlg-2">
-<div><b>Câu 2.</b> 小红实习高兴吗？</div>
+<div><b>Câu 2.</b> 谁是睡神？</div>
 <div class="mc-options">
-<button class="mc-btn" onclick="checkMC(this, true, 'dlg-2', '✓ Chính xác! 小红：是，我实习很忙，可是我很高兴。我觉得这样很好。')">A. 很高兴</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng! 小红：是，我实习很忙，可是我很高兴。我觉得这样很好。')">B. 不知道</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng! 小红：是，我实习很忙，可是我很高兴。我觉得这样很好。')">C. 不高兴</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng! 小红：是，我实习很忙，可是我很高兴。我觉得这样很好。')">D. 没关系</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng! 小红：你不是睡神吗？每天都要睡到很晚。')">A. 小红</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng! 小红：你不是睡神吗？每天都要睡到很晚。')">B. 客人</button>
+<button class="mc-btn" onclick="checkMC(this, true, 'dlg-2', '✓ Chính xác! 小红：你不是睡神吗？每天都要睡到很晚。')">C. 小明</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng! 小红：你不是睡神吗？每天都要睡到很晚。')">D. 老师</button>
 </div>
 <div class="feedback" style="margin-top:6px;"></div></div>
 <div class="q-item" id="dlg-3">
-<div><b>Câu 3.</b> 小明每天早上起床晚吗？</div>
+<div><b>Câu 3.</b> 小红在饭店实习要做什么？</div>
 <div class="mc-options">
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-3', '✗ Chưa đúng! 小明：是，我是睡神。我每天早上很晚起床。我觉得很好。')">A. 不知道</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-3', '✗ Chưa đúng! 小明：是，我是睡神。我每天早上很晚起床。我觉得很好。')">B. 不晚</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-3', '✗ Chưa đúng! 小明：是，我是睡神。我每天早上很晚起床。我觉得很好。')">C. 没关系</button>
-<button class="mc-btn" onclick="checkMC(this, true, 'dlg-3', '✓ Chính xác! 小明：是，我是睡神。我每天早上很晚起床。我觉得很好。')">D. 很晚</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-3', '✗ Chưa đúng! 小红：提水盆、送菜，还要帮客人点菜。很忙，可是很有意思，我很喜欢。')">A. 唱歌</button>
+<button class="mc-btn" onclick="checkMC(this, true, 'dlg-3', '✓ Chính xác! 小红：提水盆、送菜，还要帮客人点菜。很忙，可是很有意思，我很喜欢。')">B. 提水盆、送菜</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-3', '✗ Chưa đúng! 小红：提水盆、送菜，还要帮客人点菜。很忙，可是很有意思，我很喜欢。')">C. 做饭</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-3', '✗ Chưa đúng! 小红：提水盆、送菜，还要帮客人点菜。很忙，可是很有意思，我很喜欢。')">D. 学习</button>
 </div>
 <div class="feedback" style="margin-top:6px;"></div></div>
 <div class="q-item" id="dlg-4">
-<div><b>Câu 4.</b> 今天小明很早，因为什么？</div>
+<div><b>Câu 4.</b> 小红做完实习以后要跟小明做什么？</div>
 <div class="mc-options">
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-4', '✗ Chưa đúng! 小明：是，今天我很早，因为我要看你实习。我觉得很好。')">A. 要学习</button>
-<button class="mc-btn" onclick="checkMC(this, true, 'dlg-4', '✓ Chính xác! 小明：是，今天我很早，因为我要看你实习。我觉得很好。')">B. 要看小红实习</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-4', '✗ Chưa đúng! 小明：是，今天我很早，因为我要看你实习。我觉得很好。')">C. 要工作</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-4', '✗ Chưa đúng! 小明：是，今天我很早，因为我要看你实习。我觉得很好。')">D. 要睡觉</button>
+<button class="mc-btn" onclick="checkMC(this, true, 'dlg-4', '✓ Chính xác! 小红：不累。我一会儿就做完了，我们一起去吃饭吧。')">A. 一起吃饭</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-4', '✗ Chưa đúng! 小红：不累。我一会儿就做完了，我们一起去吃饭吧。')">B. 一起回家</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-4', '✗ Chưa đúng! 小红：不累。我一会儿就做完了，我们一起去吃饭吧。')">C. 一起看电影</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-4', '✗ Chưa đúng! 小红：不累。我一会儿就做完了，我们一起去吃饭吧。')">D. 一起学习</button>
 </div>
 <div class="feedback" style="margin-top:6px;"></div></div>
 </div>
@@ -807,11 +804,11 @@ img, svg { max-width: 100%; }
 <p><b>Bài 2 (Nghe):</b> Câu 1: B — 他在实习。 &nbsp;|&nbsp; Câu 2: C — 他是睡神。</p>
 <p><b>Bài phụ (Pinyin):</b> Câu 1: A — shíxí &nbsp;|&nbsp; Câu 2: A — shuǐpén</p>
 <p><b>Bài 3 (Ghép cặp):</b> 实习 = shíxí · 水盆 = shuǐpén · 睡神 = shuìshén · 提 = tí · 碗 = wǎn</p>
-<p><b>Bài 4 (Ngữ pháp):</b> 1. B — 他高兴了。 &nbsp;|&nbsp; 2. A — 他很累了。</p>
+<p><b>Bài 4 (Ngữ pháp):</b> 1. B — 他很高兴了。 &nbsp;|&nbsp; 2. A — 他很累了。</p>
 <p><b>Bài 5 (Đoạn văn):</b> 实习 → 水盆 → 睡神 → 提 → 碗</p>
 <p><b>Bài 6 (Sắp xếp câu):</b><br>1. 学生在实习，水盆里有水，因为学生喜欢实习，也喜欢水盆里的水。<br>2. 他是睡神，学生提水来了，因为学生喜欢提水，觉得很好。<br>3. 碗里有饭，妈妈觉得很好，因为妈妈喜欢吃饭，也喜欢碗里的饭。<br>4. 妈妈高兴了，我觉得很好。</p>
-<p><b>Bài 7 (Đọc hiểu):</b> 1. A — 学生 &nbsp;|&nbsp; 2. C — 水 &nbsp;|&nbsp; 3. D — 饭</p>
-<p><b>Bài 8 (Nghe hội thoại):</b> 1. C — 饭店 &nbsp; 2. A — 很高兴 &nbsp; 3. D — 很晚 &nbsp; 4. B — 要看小红实习</p>
+<p><b>Bài 7 (Đọc hiểu):</b> 1. A — 饭店 &nbsp;|&nbsp; 2. A — 水 &nbsp;|&nbsp; 3. D — 睡神</p>
+<p><b>Bài 8 (Nghe hội thoại):</b> 1. D — 来看小红实习 &nbsp; 2. C — 小明 &nbsp; 3. B — 提水盆、送菜 &nbsp; 4. A — 一起吃饭</p>
 </details>
 </div>
 <div class="footer">Học tốt nhé anh! Làm xong anh chép phần Tổng kết gửi em nhé — câu nào sai em sẽ đưa vào danh sách “Cần ôn thêm”.</div>
@@ -892,7 +889,7 @@ var ITEM_INFO = {
   ],
   "gram-1": [
     "Ngữ pháp 1",
-    "B — 他高兴了。"
+    "B — 他很高兴了。"
   ],
   "gram-2": [
     "Ngữ pháp 2",
@@ -920,31 +917,31 @@ var ITEM_INFO = {
   ],
   "read-1": [
     "Đọc hiểu câu 1",
-    "A — 学生"
+    "A — 饭店"
   ],
   "read-2": [
     "Đọc hiểu câu 2",
-    "C — 水"
+    "A — 水"
   ],
   "read-3": [
     "Đọc hiểu câu 3",
-    "D — 饭"
+    "D — 睡神"
   ],
   "dlg-1": [
-    "Nghe hội thoại 1 (小红在哪儿实习？)",
-    "饭店"
+    "Nghe hội thoại 1 (小明今天为什么来得很早？)",
+    "来看小红实习"
   ],
   "dlg-2": [
-    "Nghe hội thoại 2 (小红实习高兴吗？)",
-    "很高兴"
+    "Nghe hội thoại 2 (谁是睡神？)",
+    "小明"
   ],
   "dlg-3": [
-    "Nghe hội thoại 3 (小明每天早上起床晚吗？)",
-    "很晚"
+    "Nghe hội thoại 3 (小红在饭店实习要做什么？)",
+    "提水盆、送菜"
   ],
   "dlg-4": [
-    "Nghe hội thoại 4 (今天小明很早，因为什么？)",
-    "要看小红实习"
+    "Nghe hội thoại 4 (小红做完实习以后要跟小明做什么？)",
+    "一起吃饭"
   ],
   "py-1": [
     "Pinyin: 实习",
@@ -3929,7 +3926,7 @@ restore();
 </script>
 <script>
 // ====== Flashcard ôn tập (mọi từ đã học các ngày trước; chiều thẻ ngẫu nhiên) ======
-var FLASH_DATA = [{"word": "倍", "pinyin": "bèi", "hanviet": "bội", "meaning": "gấp (… lần)"}, {"word": "成长", "pinyin": "chéngzhǎng", "hanviet": "thành trưởng", "meaning": "trưởng thành; lớn lên"}, {"word": "吃惊", "pinyin": "chījīng", "hanviet": "ngật kinh", "meaning": "ngạc nhiên; giật mình"}, {"word": "出生", "pinyin": "chūshēng", "hanviet": "xuất sinh", "meaning": "sinh ra; ra đời"}, {"word": "凑热闹", "pinyin": "còu rènao", "hanviet": "thấu nhiệt náo", "meaning": "đi hóng hớt; góp vui; xem náo nhiệt"}, {"word": "大脑", "pinyin": "dànǎo", "hanviet": "đại não", "meaning": "não; bộ não"}, {"word": "发呆", "pinyin": "fādāi", "hanviet": "phát ngốc", "meaning": "ngẩn người, ngây ra"}, {"word": "发育", "pinyin": "fāyù", "hanviet": "phát dục", "meaning": "phát triển (cơ thể, trí tuệ)"}, {"word": "发展", "pinyin": "fāzhǎn", "hanviet": "phát triển", "meaning": "phát triển (sự vật, kinh tế...)"}, {"word": "过去", "pinyin": "guò qu", "hanviet": "quá khứ", "meaning": "quá khứ; trước đây"}, {"word": "壶", "pinyin": "hú", "hanviet": "hồ", "meaning": "ấm (ấm trà, ấm nước)"}, {"word": "建议", "pinyin": "jiànyì", "hanviet": "kiến nghị", "meaning": "đề nghị, gợi ý"}, {"word": "开", "pinyin": "kāi", "hanviet": "khai", "meaning": "mở"}, {"word": "开花", "pinyin": "kāihuā", "hanviet": "khai hoa", "meaning": "nở hoa"}, {"word": "克", "pinyin": "kè", "hanviet": "khắc", "meaning": "gam"}, {"word": "枯木", "pinyin": "kūmù", "hanviet": "khô mộc", "meaning": "cây khô, gỗ khô"}, {"word": "哪壶不开提哪壶", "pinyin": "nǎhúbùkāitínǎhú", "hanviet": "ná hồ bất khai đề ná hồ", "meaning": "cứ nhắc đúng chuyện người ta không muốn nghe; đụng đúng chỗ đau"}, {"word": "亲戚", "pinyin": "qīnqi", "hanviet": "thân thích", "meaning": "họ hàng, người thân"}, {"word": "却", "pinyin": "què", "hanviet": "khước", "meaning": "nhưng, lại"}, {"word": "日子", "pinyin": "rìzi", "hanviet": "nhật tử", "meaning": "ngày tháng; cuộc sống"}];
+var FLASH_DATA = [{"word": "倍", "pinyin": "bèi", "hanviet": "bội", "meaning": "gấp (… lần)", "exr": "<ruby>这<rt>Zhè</rt></ruby><ruby>个<rt>ge</rt></ruby><ruby>比<rt>bǐ</rt></ruby><ruby>那<rt>nà</rt></ruby><ruby>个<rt>ge</rt></ruby><ruby>大<rt>dà</rt></ruby><ruby>两<rt>liǎng</rt></ruby><ruby>倍<rt>bèi</rt></ruby>。", "exv": "Cái này to gấp hai lần cái kia."}, {"word": "成长", "pinyin": "chéngzhǎng", "hanviet": "thành trưởng", "meaning": "trưởng thành; lớn lên", "exr": "<ruby>孩<rt>Hái</rt></ruby><ruby>子<rt>zi</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>快<rt>kuài</rt></ruby><ruby>乐<rt>lè</rt></ruby><ruby>中<rt>zhōng</rt></ruby><ruby>成<rt>chéng</rt></ruby><ruby>长<rt>zhǎng</rt></ruby>。", "exv": "Trẻ con lớn lên trong niềm vui."}, {"word": "吃惊", "pinyin": "chījīng", "hanviet": "ngật kinh", "meaning": "ngạc nhiên; giật mình", "exr": "<ruby>他<rt>Tā</rt></ruby><ruby>看<rt>kàn</rt></ruby><ruby>到<rt>dào</rt></ruby><ruby>我<rt>wǒ</rt></ruby>，<ruby>很<rt>hěn</rt></ruby><ruby>吃<rt>chī</rt></ruby><ruby>惊<rt>jīng</rt></ruby>。", "exv": "Anh ấy nhìn thấy tôi, rất ngạc nhiên."}, {"word": "出生", "pinyin": "chūshēng", "hanviet": "xuất sinh", "meaning": "sinh ra; ra đời", "exr": "<ruby>他<rt>Tā</rt></ruby><ruby>出<rt>chū</rt></ruby><ruby>生<rt>shēng</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>北<rt>Běi</rt></ruby><ruby>京<rt>jīng</rt></ruby>，<ruby>住<rt>zhù</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>北<rt>Běi</rt></ruby><ruby>京<rt>jīng</rt></ruby>。", "exv": "Anh ấy sinh ra ở Bắc Kinh, sống ở Bắc Kinh."}, {"word": "凑热闹", "pinyin": "còu rènao", "hanviet": "thấu nhiệt náo", "meaning": "đi hóng hớt; góp vui; xem náo nhiệt", "exr": "<ruby>他<rt>Tā</rt></ruby><ruby>喜<rt>xǐ</rt></ruby><ruby>欢<rt>huan</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>凑<rt>còu</rt></ruby><ruby>热<rt>rè</rt></ruby><ruby>闹<rt>nao</rt></ruby>，<ruby>哪<rt>nǎ</rt></ruby><ruby>里<rt>li</rt></ruby><ruby>人<rt>rén</rt></ruby><ruby>多<rt>duō</rt></ruby><ruby>就<rt>jiù</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>哪<rt>nǎ</rt></ruby><ruby>里<rt>li</rt></ruby>。", "exv": "Anh ấy thích đi góp vui, chỗ nào đông người thì đến chỗ đó."}, {"word": "大脑", "pinyin": "dànǎo", "hanviet": "đại não", "meaning": "não; bộ não", "exr": "<ruby>我<rt>Wǒ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>大<rt>dà</rt></ruby><ruby>脑<rt>nǎo</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>累<rt>lèi</rt></ruby>。", "exv": "Não của tôi rất mệt."}, {"word": "发呆", "pinyin": "fādāi", "hanviet": "phát ngốc", "meaning": "ngẩn người, ngây ra", "exr": "<ruby>他<rt>Tā</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>发<rt>fā</rt></ruby><ruby>呆<rt>dāi</rt></ruby>。", "exv": "Anh ấy đang ngẩn người."}, {"word": "发育", "pinyin": "fāyù", "hanviet": "phát dục", "meaning": "phát triển (cơ thể, trí tuệ)", "exr": "<ruby>孩<rt>Hái</rt></ruby><ruby>子<rt>zi</rt></ruby><ruby>发<rt>fā</rt></ruby><ruby>育<rt>yù</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby>。", "exv": "Trẻ em phát triển rất tốt."}, {"word": "发展", "pinyin": "fāzhǎn", "hanviet": "phát triển", "meaning": "phát triển (sự vật, kinh tế...)", "exr": "<ruby>社<rt>Shè</rt></ruby><ruby>会<rt>huì</rt></ruby><ruby>发<rt>fā</rt></ruby><ruby>展<rt>zhǎn</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>快<rt>kuài</rt></ruby>。", "exv": "Xã hội phát triển rất nhanh."}, {"word": "过去", "pinyin": "guò qu", "hanviet": "quá khứ", "meaning": "quá khứ; trước đây", "exr": "<ruby>我<rt>Wǒ</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>想<rt>xiǎng</rt></ruby><ruby>过<rt>guò</rt></ruby><ruby>去<rt>qù</rt></ruby>。", "exv": "Tôi rất nhớ quá khứ."}, {"word": "壶", "pinyin": "hú", "hanviet": "hồ", "meaning": "ấm (ấm trà, ấm nước)", "exr": "<ruby>这<rt>Zhè</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>一<rt>yí</rt></ruby><ruby>个<rt>gè</rt></ruby><ruby>茶<rt>chá</rt></ruby><ruby>壶<rt>hú</rt></ruby>。", "exv": "Đây là một cái ấm trà."}, {"word": "建议", "pinyin": "jiànyì", "hanviet": "kiến nghị", "meaning": "đề nghị, gợi ý", "exr": "<ruby>我<rt>Wǒ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>建<rt>jiàn</rt></ruby><ruby>议<rt>yì</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby>。", "exv": "Đề nghị của tôi rất hay."}, {"word": "开", "pinyin": "kāi", "hanviet": "khai", "meaning": "mở", "exr": "<ruby>请<rt>Qǐng</rt></ruby><ruby>开<rt>kāi</rt></ruby><ruby>门<rt>mén</rt></ruby>。", "exv": "Xin hãy mở cửa."}, {"word": "开花", "pinyin": "kāihuā", "hanviet": "khai hoa", "meaning": "nở hoa", "exr": "<ruby>花<rt>Huā</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>开<rt>kāi</rt></ruby><ruby>花<rt>huā</rt></ruby><ruby>了<rt>le</rt></ruby>。", "exv": "Hoa sắp nở rồi."}, {"word": "克", "pinyin": "kè", "hanviet": "khắc", "meaning": "gam", "exr": "<ruby>这<rt>Zhè</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>一<rt>yí</rt></ruby><ruby>克<rt>kè</rt></ruby>。", "exv": "Đây là một gam."}, {"word": "枯木", "pinyin": "kūmù", "hanviet": "khô mộc", "meaning": "cây khô, gỗ khô", "exr": "<ruby>这<rt>Zhè</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>棵<rt>kē</rt></ruby><ruby>枯<rt>kū</rt></ruby><ruby>木<rt>mù</rt></ruby>。", "exv": "Ở đây có một cây khô."}, {"word": "哪壶不开提哪壶", "pinyin": "nǎhúbùkāitínǎhú", "hanviet": "ná hồ bất khai đề ná hồ", "meaning": "cứ nhắc đúng chuyện người ta không muốn nghe; đụng đúng chỗ đau", "exr": "<ruby>他<rt>Tā</rt></ruby><ruby>哪<rt>nǎ</rt></ruby><ruby>壶<rt>hú</rt></ruby><ruby>不<rt>bù</rt></ruby><ruby>开<rt>kāi</rt></ruby><ruby>提<rt>tí</rt></ruby><ruby>哪<rt>nǎ</rt></ruby><ruby>壶<rt>hú</rt></ruby>。", "exv": "Anh ấy cứ nhắc đúng chuyện không nên nhắc."}, {"word": "亲戚", "pinyin": "qīnqi", "hanviet": "thân thích", "meaning": "họ hàng, người thân", "exr": "<ruby>我<rt>Wǒ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>亲<rt>qīn</rt></ruby><ruby>戚<rt>qi</rt></ruby><ruby>来<rt>lái</rt></ruby><ruby>了<rt>le</rt></ruby>。", "exv": "Họ hàng của tôi đã đến."}, {"word": "却", "pinyin": "què", "hanviet": "khước", "meaning": "nhưng, lại", "exr": "<ruby>他<rt>Tā</rt></ruby><ruby>却<rt>què</rt></ruby><ruby>来<rt>lái</rt></ruby><ruby>了<rt>le</rt></ruby>。", "exv": "Nhưng anh ấy lại đến."}, {"word": "日子", "pinyin": "rìzi", "hanviet": "nhật tử", "meaning": "ngày tháng; cuộc sống", "exr": "<ruby>我<rt>Wǒ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>日<rt>rì</rt></ruby><ruby>子<rt>zi</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby>。", "exv": "Cuộc sống của tôi rất tốt."}];
 var flashDeck = [], flashIdx = 0;
 function flashShuffleDeck() {
   flashDeck = FLASH_DATA.map(function (w) { return { w: w, hanziFront: Math.random() < 0.5 }; });
@@ -3943,11 +3940,11 @@ function flashRender() {
   var cur = flashDeck[flashIdx], w = cur.w;
   var front = document.getElementById('flash-front'), back = document.getElementById('flash-back');
   if (cur.hanziFront) {
-    front.innerHTML = '<div class="flash-tag">Chữ Hán</div><div class="flash-hanzi">' + w.word + '</div><div class="flash-sub">Chạm giữa để lật · góc trái/phải để chuyển thẻ</div>';
-    back.innerHTML = '<div class="flash-tag">Nghĩa</div><div class="flash-meaning">' + w.meaning + '</div><div class="flash-sub">' + w.pinyin + ' · Hán Việt: ' + w.hanviet + '</div>';
+    front.innerHTML = '<div class="flash-hanzi">' + w.word + '</div>';
+    back.innerHTML = '<div class="flash-meaning">' + w.meaning + '</div><div class="flash-sub">' + w.pinyin + ' · Hán Việt: ' + w.hanviet + '</div>' + (w.exr ? '<div class="flash-ex"><span class="flash-ex-label">Ví dụ: </span>' + w.exr + '</div><div class="flash-ex-vi">' + w.exv + '</div>' : '');
   } else {
-    front.innerHTML = '<div class="flash-tag">Nghĩa tiếng Việt</div><div class="flash-meaning">' + w.meaning + '</div><div class="flash-sub">Chạm giữa để lật · góc trái/phải để chuyển thẻ</div>';
-    back.innerHTML = '<div class="flash-tag">Chữ Hán</div><div class="flash-hanzi">' + w.word + '</div><div class="flash-sub">' + w.pinyin + ' · Hán Việt: ' + w.hanviet + '</div>';
+    front.innerHTML = '<div class="flash-meaning">' + w.meaning + '</div>';
+    back.innerHTML = '<div class="flash-hanzi">' + w.word + '</div><div class="flash-sub">' + w.pinyin + ' · Hán Việt: ' + w.hanviet + '</div>' + (w.exr ? '<div class="flash-ex"><span class="flash-ex-label">Ví dụ: </span>' + w.exr + '</div><div class="flash-ex-vi">' + w.exv + '</div>' : '');
   }
   document.getElementById('flash-card').classList.remove('flipped');
   document.getElementById('flash-count').textContent = 'Thẻ ' + (flashIdx + 1) + ' / ' + flashDeck.length;
@@ -3972,7 +3969,7 @@ flashShuffleDeck(); flashRender();
 <script>
 // ====== Bài 8: Nghe hội thoại ======
 var DLG_SPEAKERS = [{"id": "hong", "name": "小红", "py": "Xiǎo Hóng", "gender": "nữ", "vi": "Hồng", "color": "#db2777"}, {"id": "ming", "name": "小明", "py": "Xiǎo Míng", "gender": "nam", "vi": "Minh", "color": "#2563eb"}];
-var DLG_LINES = [{"sp": "hong", "zh": "小明，我在饭店实习。你觉得呢？"}, {"sp": "ming", "zh": "你在饭店实习做什么？请告诉我，你觉得怎么样？"}, {"sp": "hong", "zh": "我在饭店提水盆，水盆里有水，客人要喝水。"}, {"sp": "ming", "zh": "你提水盆做什么？请告诉我，你觉得水盆怎么样？"}, {"sp": "hong", "zh": "我提水盆去饭店，碗在水盆里。"}, {"sp": "ming", "zh": "碗里有什么？我想知道，你觉得怎么样？"}, {"sp": "hong", "zh": "碗里有米饭。我觉得这样很好，你也觉得很好吗？"}, {"sp": "ming", "zh": "你实习很忙吗？我想知道，你觉得很忙怎么样？"}, {"sp": "hong", "zh": "是，我实习很忙，可是我很高兴。我觉得这样很好。"}, {"sp": "ming", "zh": "你每天早上去饭店吗？我想知道，你觉得怎么样？"}, {"sp": "hong", "zh": "是，我每天早上去饭店。你是睡神吗？你每天早上几点起床？"}, {"sp": "ming", "zh": "是，我是睡神。我每天早上很晚起床。我觉得很好。"}, {"sp": "hong", "zh": "你是睡神，可是今天你很早。真的很好，你觉得呢？"}, {"sp": "ming", "zh": "是，今天我很早，因为我要看你实习。我觉得很好。"}];
+var DLG_LINES = [{"sp": "hong", "zh": "小明，你今天怎么这么早就来了？"}, {"sp": "ming", "zh": "我来看你实习呀！听说你在饭店实习，我很早就起床了。"}, {"sp": "hong", "zh": "你不是睡神吗？每天都要睡到很晚。"}, {"sp": "ming", "zh": "今天不一样。你看，我还给你买了早饭。"}, {"sp": "hong", "zh": "谢谢！我先把水盆和碗送到里面去。"}, {"sp": "ming", "zh": "水盆重不重？我帮你提吧。"}, {"sp": "hong", "zh": "有点儿重。谢谢你，你真好哇！"}, {"sp": "ming", "zh": "你在饭店实习，每天都做什么？"}, {"sp": "hong", "zh": "提水盆、送菜，还要帮客人点菜。很忙，可是很有意思，我很喜欢。"}, {"sp": "ming", "zh": "你累不累？要不要休息一会儿？"}, {"sp": "hong", "zh": "不累。我一会儿就做完了，我们一起去吃饭吧。"}];
 var dlgPlaying = false;
 var dlgPaused = false;
 var dlgRate = 0.88;
