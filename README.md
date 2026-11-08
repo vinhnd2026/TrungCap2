@@ -25,7 +25,7 @@ Bộ bài học Trung cấp 2: 71 ngày, mỗi ngày 5 từ mới, học từ B�
 
 ## Bổ sung (học sau khi xong 71 ngày)
 
-- **📖 Ôn tập Ngữ pháp Trung cấp 2 (40 điểm + 33 bài tập + mục Động từ ly hợp):** [Bai-Hoc-On-Ngu-Phap-TrungCap2.html](https://vinhnd2026.github.io/TrungCap2/Bai-Hoc-On-Ngu-Phap-TrungCap2.html) — pinyin hiện sẵn trong mọi ví dụ.
+- **📖 Ôn tập Ngữ pháp Trung cấp 2 (40 điểm + 33 bài tập):** [Bai-Hoc-On-Ngu-Phap-TrungCap2.html](https://vinhnd2026.github.io/TrungCap2/Bai-Hoc-On-Ngu-Phap-TrungCap2.html) — pinyin hiện sẵn trong mọi ví dụ; kèm mục Động từ ly hợp （离合动词） với ví dụ dạng tách cho từng động từ.
 - **📚 Bài Tổng Kết Trung cấp 2:** [Bai-Hoc-Tong-Ket-TrungCap2.html](https://vinhnd2026.github.io/TrungCap2/Bai-Hoc-Tong-Ket-TrungCap2.html) — flashcard toàn bộ từ, bảng từ vựng 10 bài, 8 bài tập tổng kết (62 bài tập), truyện tổng kết dùng đủ toàn bộ từ vựng.
 
 Bấm vào từng ngày bên dưới để mở thẳng trang bài học của ngày đó.
@@ -51,7 +51,7 @@ Bấm vào từng ngày bên dưới để mở thẳng trang bài học của n
 | Day 16 | Bài 2 | 弹钢琴, 网上, 温和, 西红柿, 习惯 | [Mở bài học](https://vinhnd2026.github.io/TrungCap2/Day-16.html) |
 | Day 17 | Bài 2 | 印象, 影子, 幽默, 熨烫, 真实 | [Mở bài học](https://vinhnd2026.github.io/TrungCap2/Day-17.html) |
 | Day 18 | Bài 2–3 | 周到, 坐立不安, 爱好, 安排, 编舞 | [Mở bài học](https://vinhnd2026.github.io/TrungCap2/Day-18.html) |
-| Day 19 | Bài 3 | 茶馆儿, 臭豆腐, 锻炼, 丰富, 咖哩 | [Mở bài học](https://vinhnd2026.github.io/TrungCap2/Day-19.html) |
+| Day 19 | Bài 3 | 茶馆儿, 臭豆腐, 锻炼, 丰富, 咖喱 | [Mở bài học](https://vinhnd2026.github.io/TrungCap2/Day-19.html) |
 | Day 20 | Bài 3 | 孤单, 广场, 广场舞, 国际化, 害羞 | [Mở bài học](https://vinhnd2026.github.io/TrungCap2/Day-20.html) |
 | Day 21 | Bài 3 | 糊涂, 慧眼, 活动, 酒吧, 看法 | [Mở bài học](https://vinhnd2026.github.io/TrungCap2/Day-21.html) |
 | Day 22 | Bài 3 | 泡菜, 其实, 扰民, 受不了, 跳舞 | [Mở bài học](https://vinhnd2026.github.io/TrungCap2/Day-22.html) |
