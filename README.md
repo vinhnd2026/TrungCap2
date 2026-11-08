@@ -25,7 +25,7 @@ Bộ bài học Trung cấp 2: 71 ngày, mỗi ngày 5 từ mới, học từ B�
 
 ## Bổ sung (học sau khi xong 71 ngày)
 
-- **📖 Ôn tập Ngữ pháp Trung cấp 2 (40 điểm + 33 bài tập):** [Bai-Hoc-On-Ngu-Phap-TrungCap2.html](https://vinhnd2026.github.io/TrungCap2/Bai-Hoc-On-Ngu-Phap-TrungCap2.html) — pinyin hiện sẵn trong mọi ví dụ; kèm mục Động từ ly hợp （离合动词） với ví dụ dạng tách cho từng động từ.
+- **📖 Ôn tập Ngữ pháp Trung cấp 2 (48 điểm + 33 bài tập):** [Bai-Hoc-On-Ngu-Phap-TrungCap2.html](https://vinhnd2026.github.io/TrungCap2/Bai-Hoc-On-Ngu-Phap-TrungCap2.html) — pinyin hiện sẵn trong mọi ví dụ; kèm mục Động từ ly hợp （离合动词） với ví dụ dạng tách cho từng động từ.
 - **📚 Bài Tổng Kết Trung cấp 2:** [Bai-Hoc-Tong-Ket-TrungCap2.html](https://vinhnd2026.github.io/TrungCap2/Bai-Hoc-Tong-Ket-TrungCap2.html) — flashcard toàn bộ từ, bảng từ vựng 10 bài, 8 bài tập tổng kết (62 bài tập), truyện tổng kết dùng đủ toàn bộ từ vựng.
 
 Bấm vào từng ngày bên dưới để mở thẳng trang bài học của ngày đó.
